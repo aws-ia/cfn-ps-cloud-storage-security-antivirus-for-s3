@@ -73,9 +73,6 @@ Metadata:
         default: Quick Start S3 key prefix
       QSDisableAutoProtect:
         default: Quick Start Disable Auto-Protect
-  cfn-lint:
-    config:
-      ignore_checks: [EIAMRoleResourceWildardPassRole]
 Parameters:
   UserName:
     Type: String

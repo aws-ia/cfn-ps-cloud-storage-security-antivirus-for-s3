@@ -61,9 +61,6 @@ Metadata:
         default: Buckets to Protect
       QSDisableAutoProtect:
         default: Quick Start Disable Auto-Protect
-  cfn-lint:
-    config:
-      ignore_checks: [EIAMRoleResourceWildardPassRole]
 Parameters:
   UserName:
     Type: String
