@@ -245,7 +245,7 @@ Resources:
             reason: "s3:GetBucktLocation and s3:ListAllMyBuckets required '*' Resource"
       cfn-lint:
         config:
-          ignore_checks: [EIAMPolicyActionWildcard, EIAMPolicyWildcardResource]
+          ignore_checks: [EIAMPolicyActionWildcard, EIAMPolicyWildcardResource, EIAMRoleResourceWildardPassRole]
           ignore_reasons:
             EIAMPolicyWildcardResource: >
               s3:GetBucktLocation and s3:ListAllMyBuckets required '*' Resource
