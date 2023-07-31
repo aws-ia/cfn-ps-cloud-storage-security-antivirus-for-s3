@@ -1,6 +1,66 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: Version 1.00.000 - CloudFormation template for CloudStorageSec (CSS) Console software alongside a AWS TransferFamily deployment. (qs-1uc9a1c0k)
 Metadata:
+  AWS::CloudFormation::Interface:
+    ParameterGroups:
+      - Parameters:
+          - UserName
+          - Email
+        Label:
+          default: User Configuration
+      - Parameters:
+          - VPC
+          - SubnetA
+          - SubnetB
+          - ConsoleSecurityGroupCidrBlock
+        Label:
+          default: Network Configuration
+      - Parameters:
+          - AgentScanningEngine
+          - MultiEngineScanningMode
+          - AgentDiskSize
+          - EnableLargeFileScanning
+          - LargeFileDiskSize
+          - BucketsToProtect
+        Label:
+          default: CSS Configuration
+      - Parameters:
+          - ExistingTransferFamilyServer
+        Label:
+          default: Transfer Family
+      - Parameters:
+          - QSDisableAutoProtect
+        Label:
+          default: AWS Quick Start Configuration
+    ParameterLabels:
+      UserName:
+        default: Admin User Name
+      Email:
+        default: Admin User Email Address
+      VPC:
+        default: Virtual Private Cloud (VPC) ID
+      SubnetA:
+        default: Subnet A ID
+      SubnetB:
+        default: Subnet B ID
+      ConsoleSecurityGroupCidrBlock:
+        default: Console Security Group CIDR Block
+      AgentScanningEngine:
+        default: Agent Scanning Engine
+      MultiEngineScanningMode:
+        default: Multi-Engine Scanning Mode
+      AgentDiskSize:
+        default: Agent Disk Size
+      EnableLargeFileScanning:
+        default: Enable Large File Scanning
+      LargeFileDiskSize:
+        default: Extra Large File Disk Size
+      ExistingTransferFamilyServer:
+        default: Existing Transfer Family Server
+      BucketsToProtect:
+        default: Buckets to Protect
+      QSDisableAutoProtect:
+        default: Quick Start Disable Auto-Protect
   cfn-lint:
     config:
       ignore_checks: [EIAMRoleResourceWildardPassRole]
@@ -81,67 +141,6 @@ Parameters:
     Description: "By default, the bucket which is created to store files uploaded to the Transfer Server,
       is automatically protected by the CSS Console. It is highly recommended you keep the default value,
       in order to ensure all files uploaded are scanned for malware immediately."
-Metadata:
-  AWS::CloudFormation::Interface:
-    ParameterGroups:
-      - Parameters:
-          - UserName
-          - Email
-        Label:
-          default: User Configuration
-      - Parameters:
-          - VPC
-          - SubnetA
-          - SubnetB
-          - ConsoleSecurityGroupCidrBlock
-        Label:
-          default: Network Configuration
-      - Parameters:
-          - AgentScanningEngine
-          - MultiEngineScanningMode
-          - AgentDiskSize
-          - EnableLargeFileScanning
-          - LargeFileDiskSize
-          - BucketsToProtect
-        Label:
-          default: CSS Configuration
-      - Parameters:
-          - ExistingTransferFamilyServer
-        Label:
-          default: Transfer Family
-      - Parameters:
-          - QSDisableAutoProtect
-        Label:
-          default: AWS Quick Start Configuration
-    ParameterLabels:
-      UserName:
-        default: Admin User Name
-      Email:
-        default: Admin User Email Address
-      VPC:
-        default: Virtual Private Cloud (VPC) ID
-      SubnetA:
-        default: Subnet A ID
-      SubnetB:
-        default: Subnet B ID
-      ConsoleSecurityGroupCidrBlock:
-        default: Console Security Group CIDR Block
-      AgentScanningEngine:
-        default: Agent Scanning Engine
-      MultiEngineScanningMode:
-        default: Multi-Engine Scanning Mode
-      AgentDiskSize:
-        default: Agent Disk Size
-      EnableLargeFileScanning:
-        default: Enable Large File Scanning
-      LargeFileDiskSize:
-        default: Extra Large File Disk Size
-      ExistingTransferFamilyServer:
-        default: Existing Transfer Family Server
-      BucketsToProtect:
-        default: Buckets to Protect
-      QSDisableAutoProtect:
-        default: Quick Start Disable Auto-Protect
 Conditions:
   DeployTransferFamily: !Equals [!Ref ExistingTransferFamilyServer, "No"]
   DisableAutoProtect: !Equals [!Ref QSDisableAutoProtect, "Yes"]

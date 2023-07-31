@@ -1,6 +1,78 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: Version 1.00.000 - CloudFormation template for CloudStorageSec (CSS) Console software alongside a AWS TransferFamily deployment. (qs-1uc9a1c0k)
 Metadata:
+  AWS::CloudFormation::Interface:
+    ParameterGroups:
+      - Parameters:
+          - UserName
+          - Email
+        Label:
+          default: User Configuration
+      - Parameters:
+          - AvailabilityZones
+          - VPCCIDR
+          - Subnet1CIDR
+          - Subnet2CIDR
+          - ConsoleSecurityGroupCidrBlock
+        Label:
+          default: Network Configuration
+      - Parameters:
+          - AgentScanningEngine
+          - MultiEngineScanningMode
+          - AgentDiskSize
+          - EnableLargeFileScanning
+          - LargeFileDiskSize
+          - BucketsToProtect
+        Label:
+          default: CSS Configuration
+      - Parameters:
+          - ExistingTransferFamilyServer
+        Label:
+          default: Transfer Family
+      - Parameters:
+          - QSS3BucketName
+          - QSS3KeyPrefix
+          - QSS3BucketRegion
+          - QSDisableAutoProtect
+        Label:
+          default: AWS Quick Start Configuration
+    ParameterLabels:
+      UserName:
+        default: Admin User Name
+      Email:
+        default: Admin User Email Address
+      AvailabilityZones:
+        default: Availability Zones
+      VPCCIDR:
+        default: Virtual Private Cloud (VPC) CIDR Block
+      Subnet1CIDR:
+        default: Subnet 1 CIDR Block
+      Subnet2CIDR:
+        default: Subnet 2 CIDR Block
+      ConsoleSecurityGroupCidrBlock:
+        default: Console Security Group CIDR Block
+      AgentScanningEngine:
+        default: Agent Scanning Engine
+      MultiEngineScanningMode:
+        default: Multi-Engine Scanning Mode
+      AgentDiskSize:
+        default: Agent Disk Size
+      EnableLargeFileScanning:
+        default: Enable Large File Scanning
+      LargeFileDiskSize:
+        default: Extra Large File Disk Size
+      ExistingTransferFamilyServer:
+        default: Existing Transfer Family Server
+      BucketsToProtect:
+        default: Buckets to Protect
+      QSS3BucketName:
+        default: Quick Start S3 bucket name
+      QSS3BucketRegion:
+        default: Quick Start S3 bucket Region
+      QSS3KeyPrefix:
+        default: Quick Start S3 key prefix
+      QSDisableAutoProtect:
+        default: Quick Start Disable Auto-Protect
   cfn-lint:
     config:
       ignore_checks: [EIAMRoleResourceWildardPassRole]
@@ -121,79 +193,6 @@ Parameters:
     Description: "By default, the bucket which is created to store files uploaded to the Transfer Server,
       is automatically protected by the CSS Console. It is highly recommended you keep the default value,
       in order to ensure all files uploaded are scanned for malware immediately."
-Metadata:
-  AWS::CloudFormation::Interface:
-    ParameterGroups:
-      - Parameters:
-          - UserName
-          - Email
-        Label:
-          default: User Configuration
-      - Parameters:
-          - AvailabilityZones
-          - VPCCIDR
-          - Subnet1CIDR
-          - Subnet2CIDR
-          - ConsoleSecurityGroupCidrBlock
-        Label:
-          default: Network Configuration
-      - Parameters:
-          - AgentScanningEngine
-          - MultiEngineScanningMode
-          - AgentDiskSize
-          - EnableLargeFileScanning
-          - LargeFileDiskSize
-          - BucketsToProtect
-        Label:
-          default: CSS Configuration
-      - Parameters:
-          - ExistingTransferFamilyServer
-        Label:
-          default: Transfer Family
-      - Parameters:
-          - QSS3BucketName
-          - QSS3KeyPrefix
-          - QSS3BucketRegion
-          - QSDisableAutoProtect
-        Label:
-          default: AWS Quick Start Configuration
-    ParameterLabels:
-      UserName:
-        default: Admin User Name
-      Email:
-        default: Admin User Email Address
-      AvailabilityZones:
-        default: Availability Zones
-      VPCCIDR:
-        default: Virtual Private Cloud (VPC) CIDR Block
-      Subnet1CIDR:
-        default: Subnet 1 CIDR Block
-      Subnet2CIDR:
-        default: Subnet 2 CIDR Block
-      ConsoleSecurityGroupCidrBlock:
-        default: Console Security Group CIDR Block
-      AgentScanningEngine:
-        default: Agent Scanning Engine
-      MultiEngineScanningMode:
-        default: Multi-Engine Scanning Mode
-      AgentDiskSize:
-        default: Agent Disk Size
-      EnableLargeFileScanning:
-        default: Enable Large File Scanning
-      LargeFileDiskSize:
-        default: Extra Large File Disk Size
-      ExistingTransferFamilyServer:
-        default: Existing Transfer Family Server
-      BucketsToProtect:
-        default: Buckets to Protect
-      QSS3BucketName:
-        default: Quick Start S3 bucket name
-      QSS3BucketRegion:
-        default: Quick Start S3 bucket Region
-      QSS3KeyPrefix:
-        default: Quick Start S3 key prefix
-      QSDisableAutoProtect:
-        default: Quick Start Disable Auto-Protect
 Conditions:
   DeployTransferFamily: !Equals [!Ref ExistingTransferFamilyServer, "No"]
   UsingDefaultBucket: !Equals [!Ref QSS3BucketName, "aws-quickstart"]
