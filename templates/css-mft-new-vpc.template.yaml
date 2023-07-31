@@ -1,5 +1,9 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: Version 1.00.000 - CloudFormation template for CloudStorageSec (CSS) Console software alongside a AWS TransferFamily deployment. (qs-1uc9a1c0k)
+Metadata:
+  cfn-lint:
+    config:
+      ignore_checks: [EIAMRoleResourceWildardPassRole]
 Parameters:
   UserName:
     Type: String
