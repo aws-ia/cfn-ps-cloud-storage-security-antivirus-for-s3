@@ -1,3 +1,26 @@
 // Include any postdeployment steps here, such as steps necessary to test that the deployment was successful. If there are no postdeployment steps, leave this file empty.
 
 == Postdeployment steps
+
+To get started with the Antivirus for Managed File Transfers console:
+
+. Login to the email address previously added to the Admin User Email field within the CloudFormation Template during deployment.
+. Locate the Antivirus for Amazon S3 - Console Account Information email.
+. Open the console link and login using the provided temporary credentials.
+. Upon login you will be prompted to update your password.  
+. Make any desired changes.  
+
+To get started with your new Transfer Family Server*:
+
+. Review the pre-configured settings of your Server within the AWS Console.
+. We recommend that you connect to your server and upload a test file.
+. Please note that:
+.. The server's protocol will be SFTP (SSH File Transfer Protocol) - file transfer over Secure Shell.
+.. The server will have a public endpoint.
+.. A Lambda function is created during the deployment and will validate authentication for secure file transfers.
+.. Files will be uploaded to S3 directly and will trigger an event-based scan by Antivirus for Managed File Transfers.
+.. The username and password to connect to the server will be the same username and password established within the Antivirus for Managed File Transfers console.
+
+*If you chose to have a Transfer Family Server created as part of your deployment.
+
+For more information on getting started with Antivirus for Managed File Transfers, please visit: https://help.cloudstoragesec.com/getting-started/initial-config[How to Configure].
