@@ -1,0 +1,774 @@
+-----------------------------------------------------------------------------
+Region: us-east-1
+StackName: tCaT-default-04ab04
+*****************************************************************************
+ResourceStatusReason:  
+Stack launch was successful
+*****************************************************************************
+*****************************************************************************
+Events:  
+TimeStamp                         ResourceStatus      ResourceType                LogicalResourceId    ResourceStatusReason
+--------------------------------  ------------------  --------------------------  -------------------  ---------------------------
+2023-08-01 17:34:06.620000+00:00  CREATE_COMPLETE     AWS::CloudFormation::Stack  tCaT-default-04ab04
+2023-08-01 17:34:03.903000+00:00  CREATE_COMPLETE     AWS::CloudFormation::Stack  CssMftStack
+2023-08-01 17:22:16.378000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  CssMftStack          Resource creation Initiated
+2023-08-01 17:22:15.615000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  CssMftStack
+2023-08-01 17:22:15.031000+00:00  CREATE_COMPLETE     AWS::CloudFormation::Stack  VPCStack
+2023-08-01 17:21:13.988000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  VPCStack             Resource creation Initiated
+2023-08-01 17:21:13.055000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  VPCStack
+2023-08-01 17:21:10.082000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  tCaT-default-04ab04  User Initiated
+*****************************************************************************
+-----------------------------------------------------------------------------
+Tested on: Tuesday, 01. August 2023 12:34PM
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+Region: us-east-1
+StackName: tCaT-default-04ab04-VPCStack-1BT0XIGIMC00S
+*****************************************************************************
+ResourceStatusReason:  
+Stack launch was successful
+*****************************************************************************
+*****************************************************************************
+Events:  
+TimeStamp                         ResourceStatus      ResourceType                           LogicalResourceId                           ResourceStatusReason
+--------------------------------  ------------------  -------------------------------------  ------------------------------------------  ---------------------------
+2023-08-01 17:22:11.790000+00:00  CREATE_COMPLETE     AWS::CloudFormation::Stack             tCaT-default-04ab04-VPCStack-1BT0XIGIMC00S
+2023-08-01 17:22:08.161000+00:00  CREATE_COMPLETE     AWS::EC2::Route                        PublicSubnetRoute
+2023-08-01 17:21:52.760000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Route                        PublicSubnetRoute                           Resource creation Initiated
+2023-08-01 17:21:52.209000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Route                        PublicSubnetRoute
+2023-08-01 17:21:51.443000+00:00  CREATE_COMPLETE     AWS::EC2::VPCGatewayAttachment         VPCGatewayAttachment
+2023-08-01 17:21:45.701000+00:00  CREATE_COMPLETE     AWS::EC2::SubnetRouteTableAssociation  PublicSubnet1RouteTableAssociation
+2023-08-01 17:21:45.644000+00:00  CREATE_COMPLETE     AWS::EC2::SubnetRouteTableAssociation  PublicSubnet2RouteTableAssociation
+2023-08-01 17:21:45.393000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SubnetRouteTableAssociation  PublicSubnet1RouteTableAssociation          Resource creation Initiated
+2023-08-01 17:21:45.388000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SubnetRouteTableAssociation  PublicSubnet2RouteTableAssociation          Resource creation Initiated
+2023-08-01 17:21:43.839000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SubnetRouteTableAssociation  PublicSubnet1RouteTableAssociation
+2023-08-01 17:21:43.798000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SubnetRouteTableAssociation  PublicSubnet2RouteTableAssociation
+2023-08-01 17:21:43.069000+00:00  CREATE_COMPLETE     AWS::EC2::RouteTable                   PublicSubnetRouteTable
+2023-08-01 17:21:35.937000+00:00  CREATE_IN_PROGRESS  AWS::EC2::VPCGatewayAttachment         VPCGatewayAttachment                        Resource creation Initiated
+2023-08-01 17:21:35.526000+00:00  CREATE_IN_PROGRESS  AWS::EC2::VPCGatewayAttachment         VPCGatewayAttachment
+2023-08-01 17:21:35.404000+00:00  CREATE_COMPLETE     AWS::EC2::Subnet                       PublicSubnet2
+2023-08-01 17:21:35.139000+00:00  CREATE_COMPLETE     AWS::EC2::Subnet                       PublicSubnet1
+2023-08-01 17:21:34.819000+00:00  CREATE_COMPLETE     AWS::EC2::InternetGateway              InternetGateway
+2023-08-01 17:21:32.642000+00:00  CREATE_COMPLETE     AWS::EC2::VPCDHCPOptionsAssociation    VPCDHCPOptionsAssociation
+2023-08-01 17:21:32.437000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Subnet                       PublicSubnet2                               Resource creation Initiated
+2023-08-01 17:21:32.368000+00:00  CREATE_IN_PROGRESS  AWS::EC2::VPCDHCPOptionsAssociation    VPCDHCPOptionsAssociation                   Resource creation Initiated
+2023-08-01 17:21:32.302000+00:00  CREATE_IN_PROGRESS  AWS::EC2::RouteTable                   PublicSubnetRouteTable                      Resource creation Initiated
+2023-08-01 17:21:32.206000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Subnet                       PublicSubnet1                               Resource creation Initiated
+2023-08-01 17:21:31.284000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Subnet                       PublicSubnet2
+2023-08-01 17:21:31.257000+00:00  CREATE_IN_PROGRESS  AWS::EC2::RouteTable                   PublicSubnetRouteTable
+2023-08-01 17:21:31.196000+00:00  CREATE_IN_PROGRESS  AWS::EC2::VPCDHCPOptionsAssociation    VPCDHCPOptionsAssociation
+2023-08-01 17:21:31.098000+00:00  CREATE_IN_PROGRESS  AWS::EC2::Subnet                       PublicSubnet1
+2023-08-01 17:21:30.359000+00:00  CREATE_COMPLETE     AWS::EC2::VPC                          VPC
+2023-08-01 17:21:24.906000+00:00  CREATE_COMPLETE     AWS::EC2::DHCPOptions                  DHCPOptions
+2023-08-01 17:21:19.399000+00:00  CREATE_IN_PROGRESS  AWS::EC2::DHCPOptions                  DHCPOptions                                 Resource creation Initiated
+2023-08-01 17:21:19.388000+00:00  CREATE_IN_PROGRESS  AWS::EC2::VPC                          VPC                                         Resource creation Initiated
+2023-08-01 17:21:19.312000+00:00  CREATE_IN_PROGRESS  AWS::EC2::InternetGateway              InternetGateway                             Resource creation Initiated
+2023-08-01 17:21:18.267000+00:00  CREATE_IN_PROGRESS  AWS::EC2::DHCPOptions                  DHCPOptions
+2023-08-01 17:21:18.091000+00:00  CREATE_IN_PROGRESS  AWS::EC2::InternetGateway              InternetGateway
+2023-08-01 17:21:18.031000+00:00  CREATE_IN_PROGRESS  AWS::EC2::VPC                          VPC
+2023-08-01 17:21:13.712000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack             tCaT-default-04ab04-VPCStack-1BT0XIGIMC00S  User Initiated
+*****************************************************************************
+-----------------------------------------------------------------------------
+Tested on: Tuesday, 01. August 2023 12:34PM
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+Region: us-east-1
+StackName: tCaT-default-04ab04-CssMftStack-15N4C0DJS0M7E
+*****************************************************************************
+ResourceStatusReason:  
+Stack launch was successful
+*****************************************************************************
+*****************************************************************************
+Events:  
+TimeStamp                         ResourceStatus      ResourceType                LogicalResourceId                              ResourceStatusReason
+--------------------------------  ------------------  --------------------------  ---------------------------------------------  ---------------------------
+2023-08-01 17:33:43.013000+00:00  CREATE_COMPLETE     AWS::CloudFormation::Stack  tCaT-default-04ab04-CssMftStack-15N4C0DJS0M7E
+2023-08-01 17:33:41.254000+00:00  CREATE_COMPLETE     AWS::Lambda::Permission     TransferFamilyAuthHandlerInvoke
+2023-08-01 17:33:40.989000+00:00  CREATE_IN_PROGRESS  AWS::Lambda::Permission     TransferFamilyAuthHandlerInvoke                Resource creation Initiated
+2023-08-01 17:33:39.922000+00:00  CREATE_IN_PROGRESS  AWS::Lambda::Permission     TransferFamilyAuthHandlerInvoke
+2023-08-01 17:33:39.056000+00:00  CREATE_COMPLETE     AWS::Transfer::Server       TransferFamilyServer
+2023-08-01 17:30:36.833000+00:00  CREATE_IN_PROGRESS  AWS::Transfer::Server       TransferFamilyServer                           Resource creation Initiated
+2023-08-01 17:30:35.023000+00:00  CREATE_IN_PROGRESS  AWS::Transfer::Server       TransferFamilyServer
+2023-08-01 17:30:34.352000+00:00  CREATE_COMPLETE     AWS::Lambda::Function       TransferFamilyAuthHandler
+2023-08-01 17:30:28.718000+00:00  CREATE_IN_PROGRESS  AWS::Lambda::Function       TransferFamilyAuthHandler                      Resource creation Initiated
+2023-08-01 17:30:28.279000+00:00  CREATE_COMPLETE     AWS::S3::BucketPolicy       TransferFamilyDestinationBucketPolicy
+2023-08-01 17:30:28.165000+00:00  CREATE_IN_PROGRESS  AWS::S3::BucketPolicy       TransferFamilyDestinationBucketPolicy          Resource creation Initiated
+2023-08-01 17:30:27.402000+00:00  CREATE_IN_PROGRESS  AWS::Lambda::Function       TransferFamilyAuthHandler
+2023-08-01 17:30:27.369000+00:00  CREATE_IN_PROGRESS  AWS::S3::BucketPolicy       TransferFamilyDestinationBucketPolicy
+2023-08-01 17:30:26.556000+00:00  CREATE_COMPLETE     AWS::IAM::Role              TransferFamilyUserRole
+2023-08-01 17:30:13.618000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role              TransferFamilyUserRole                         Resource creation Initiated
+2023-08-01 17:30:13.109000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role              TransferFamilyUserRole
+2023-08-01 17:30:12.412000+00:00  CREATE_COMPLETE     AWS::S3::Bucket             TransferFamilyDestinationBucket
+2023-08-01 17:30:03.921000+00:00  CREATE_COMPLETE     AWS::IAM::Role              TransferFamilyAuthLambdaExecutionRole
+2023-08-01 17:29:51.691000+00:00  CREATE_IN_PROGRESS  AWS::S3::Bucket             TransferFamilyDestinationBucket                Resource creation Initiated
+2023-08-01 17:29:51.324000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role              TransferFamilyAuthLambdaExecutionRole          Resource creation Initiated
+2023-08-01 17:29:50.936000+00:00  CREATE_IN_PROGRESS  AWS::S3::Bucket             TransferFamilyDestinationBucket
+2023-08-01 17:29:50.837000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role              TransferFamilyAuthLambdaExecutionRole
+2023-08-01 17:29:50.200000+00:00  CREATE_COMPLETE     AWS::CloudFormation::Stack  CssConsoleStack
+2023-08-01 17:22:33.524000+00:00  CREATE_COMPLETE     AWS::IAM::Role              TransferFamilyServerLoggingRole
+2023-08-01 17:22:20.523000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  CssConsoleStack                                Resource creation Initiated
+2023-08-01 17:22:19.714000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role              TransferFamilyServerLoggingRole                Resource creation Initiated
+2023-08-01 17:22:19.356000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  CssConsoleStack
+2023-08-01 17:22:19.331000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role              TransferFamilyServerLoggingRole
+2023-08-01 17:22:16.218000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack  tCaT-default-04ab04-CssMftStack-15N4C0DJS0M7E  User Initiated
+*****************************************************************************
+-----------------------------------------------------------------------------
+Tested on: Tuesday, 01. August 2023 12:34PM
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+Region: us-east-1
+StackName: tCaT-default-04ab04-CssMftStack-15N4C0DJS0M7E-CssConsoleStack-2KNEQ933NBVN
+*****************************************************************************
+ResourceStatusReason:  
+Stack launch was successful
+*****************************************************************************
+*****************************************************************************
+Events:  
+TimeStamp                         ResourceStatus      ResourceType                                 LogicalResourceId                                                           ResourceStatusReason
+--------------------------------  ------------------  -------------------------------------------  --------------------------------------------------------------------------  ---------------------------
+2023-08-01 17:29:31.226000+00:00  CREATE_COMPLETE     AWS::CloudFormation::Stack                   tCaT-default-04ab04-CssMftStack-15N4C0DJS0M7E-CssConsoleStack-2KNEQ933NBVN
+2023-08-01 17:29:25.746000+00:00  CREATE_COMPLETE     AWS::ApplicationAutoScaling::ScalableTarget  AutoScalingTarget
+2023-08-01 17:29:25.460000+00:00  CREATE_IN_PROGRESS  AWS::ApplicationAutoScaling::ScalableTarget  AutoScalingTarget                                                           Resource creation Initiated
+2023-08-01 17:29:24.119000+00:00  CREATE_IN_PROGRESS  AWS::ApplicationAutoScaling::ScalableTarget  AutoScalingTarget
+2023-08-01 17:29:22.634000+00:00  CREATE_COMPLETE     AWS::ECS::Service                            Service
+2023-08-01 17:26:01.730000+00:00  CREATE_IN_PROGRESS  AWS::ECS::Service                            Service                                                                     Resource creation Initiated
+2023-08-01 17:25:59.675000+00:00  CREATE_IN_PROGRESS  AWS::ECS::Service                            Service
+2023-08-01 17:25:57.896000+00:00  CREATE_COMPLETE     AWS::ECS::TaskDefinition                     TaskDefinition
+2023-08-01 17:25:55.933000+00:00  CREATE_IN_PROGRESS  AWS::ECS::TaskDefinition                     TaskDefinition                                                              Resource creation Initiated
+2023-08-01 17:25:52.586000+00:00  CREATE_IN_PROGRESS  AWS::ECS::TaskDefinition                     TaskDefinition
+2023-08-01 17:25:50.966000+00:00  CREATE_COMPLETE     AWS::IAM::InstanceProfile                    Ec2ContainerInstanceProfile
+2023-08-01 17:24:52.538000+00:00  CREATE_COMPLETE     AWS::AppConfig::Deployment                   AppConfigAgentDeployment
+2023-08-01 17:24:51.950000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::Deployment                   AppConfigAgentDeployment                                                    Resource creation Initiated
+2023-08-01 17:24:50.342000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::Deployment                   AppConfigAgentDeployment
+2023-08-01 17:24:49.094000+00:00  CREATE_COMPLETE     AWS::AppConfig::ConfigurationProfile         AppConfigProfile
+2023-08-01 17:24:48.728000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::ConfigurationProfile         AppConfigProfile                                                            Resource creation Initiated
+2023-08-01 17:24:47.580000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::ConfigurationProfile         AppConfigProfile
+2023-08-01 17:24:46.453000+00:00  CREATE_COMPLETE     AWS::IAM::Policy                             AppConfigAgentConfigurationDocumentPolicy
+2023-08-01 17:24:30.787000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             AppConfigAgentConfigurationDocumentPolicy                                   Resource creation Initiated
+2023-08-01 17:24:29.694000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             AppConfigAgentConfigurationDocumentPolicy
+2023-08-01 17:24:28.266000+00:00  CREATE_COMPLETE     AWS::SSM::Document                           AppConfigDocument
+2023-08-01 17:23:57.734000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Document                           AppConfigDocument                                                           Resource creation Initiated
+2023-08-01 17:23:56.465000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Document                           AppConfigDocument
+2023-08-01 17:23:56.138000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         ProblemFilesTable
+2023-08-01 17:23:55.552000+00:00  CREATE_COMPLETE     AWS::IAM::Policy                             Ec2ContainerPolicy
+2023-08-01 17:23:55.421000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         DailyScanStatisticsTable
+2023-08-01 17:23:55.384000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         AgentsTable
+2023-08-01 17:23:55.276000+00:00  CREATE_COMPLETE     AWS::SSM::Document                           AppConfigDocumentSchema
+2023-08-01 17:23:55.101000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         ClassificationResultsTable
+2023-08-01 17:23:54.970000+00:00  CREATE_COMPLETE     AWS::IAM::Policy                             EventBridgePolicy
+2023-08-01 17:23:45.699000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         AgentDataTable
+2023-08-01 17:23:45.401000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         NotificationsTable
+2023-08-01 17:23:45.391000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         JobsTable
+2023-08-01 17:23:45.366000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         StorageAnalysisTable
+2023-08-01 17:23:45.348000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         MonthlyScanStatisticsTable
+2023-08-01 17:23:45.329000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         BucketScanStatisticsTable
+2023-08-01 17:23:45.237000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         FileCountTable
+2023-08-01 17:23:45.163000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         AllowedInfectedFilesTable
+2023-08-01 17:23:45.096000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         BucketClassificationStatisticsTable
+2023-08-01 17:23:40.152000+00:00  CREATE_IN_PROGRESS  AWS::IAM::InstanceProfile                    Ec2ContainerInstanceProfile                                                 Resource creation Initiated
+2023-08-01 17:23:39.981000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             Ec2ContainerPolicy                                                          Resource creation Initiated
+2023-08-01 17:23:39.420000+00:00  CREATE_COMPLETE     AWS::IAM::Policy                             CloudTrailLakePolicy
+2023-08-01 17:23:39.349000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             EventBridgePolicy                                                           Resource creation Initiated
+2023-08-01 17:23:39.230000+00:00  CREATE_COMPLETE     AWS::IAM::Policy                             ConsoleTaskPolicyAwsLicensing
+2023-08-01 17:23:39.187000+00:00  CREATE_COMPLETE     AWS::IAM::Policy                             ConsoleTaskPolicyApiLb
+2023-08-01 17:23:38.959000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             Ec2ContainerPolicy
+2023-08-01 17:23:38.827000+00:00  CREATE_IN_PROGRESS  AWS::IAM::InstanceProfile                    Ec2ContainerInstanceProfile
+2023-08-01 17:23:38.471000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         VisibleGroupsTable
+2023-08-01 17:23:38.314000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             EventBridgePolicy
+2023-08-01 17:23:38.184000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         GroupMembershipTable
+2023-08-01 17:23:37.362000+00:00  CREATE_COMPLETE     AWS::IAM::Role                               Ec2ContainerRole
+2023-08-01 17:23:36.850000+00:00  CREATE_COMPLETE     AWS::IAM::Role                               EventBridgeRole
+2023-08-01 17:23:35.772000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         ScheduledClassificationsTable
+2023-08-01 17:23:35.439000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         ConsoleTable
+2023-08-01 17:23:35.212000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         BucketsTable
+2023-08-01 17:23:35.211000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         DeploymentStatusTable
+2023-08-01 17:23:35.163000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         SophosTapDataTable
+2023-08-01 17:23:35.154000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         SubnetsTable
+2023-08-01 17:23:35.093000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         LinkedAccountsTable
+2023-08-01 17:23:35.052000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         GroupsTable
+2023-08-01 17:23:34.938000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         ScheduledScansTable
+2023-08-01 17:23:34.887000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         WorkDocsConnectionsTable
+2023-08-01 17:23:34.872000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         LicenseFileHistoryTable
+2023-08-01 17:23:34.613000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         LinkedAccountMembershipTable
+2023-08-01 17:23:28.892000+00:00  CREATE_COMPLETE     AWS::EC2::SecurityGroup                      ContainerSecurityGroup
+2023-08-01 17:23:27.554000+00:00  CREATE_COMPLETE     AWS::ECS::Cluster                            Cluster
+2023-08-01 17:23:27.504000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SecurityGroup                      ContainerSecurityGroup                                                      Resource creation Initiated
+2023-08-01 17:23:27.477000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         VisibleGroupsTable                                                          Resource creation Initiated
+2023-08-01 17:23:27.293000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         GroupMembershipTable                                                        Resource creation Initiated
+2023-08-01 17:23:26.706000+00:00  CREATE_COMPLETE     AWS::SNS::TopicPolicy                        NotificationsTopicPolicy
+2023-08-01 17:23:26.324000+00:00  CREATE_IN_PROGRESS  AWS::SNS::TopicPolicy                        NotificationsTopicPolicy                                                    Resource creation Initiated
+2023-08-01 17:23:25.429000+00:00  CREATE_IN_PROGRESS  AWS::SNS::TopicPolicy                        NotificationsTopicPolicy
+2023-08-01 17:23:24.933000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ScheduledClassificationsTable                                               Resource creation Initiated
+2023-08-01 17:23:24.686000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          QuarantineInPrimaryAccountParameter
+2023-08-01 17:23:24.622000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          SecurityHubEnabledParameter
+2023-08-01 17:23:24.621000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ProblemFilesTable                                                           Resource creation Initiated
+2023-08-01 17:23:24.611000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          MultiEngineScanningModeParameter
+2023-08-01 17:23:24.458000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          OnlyScanWhenQueueThresholdExceededParameter
+2023-08-01 17:23:24.417000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ConsoleTable                                                                Resource creation Initiated
+2023-08-01 17:23:24.385000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          AgentScanningEngineParameter
+2023-08-01 17:23:24.364000+00:00  CREATE_COMPLETE     AWS::Logs::LogGroup                          CloudwatchLogsGroup
+2023-08-01 17:23:24.364000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Document                           AppConfigDocumentSchema                                                     Resource creation Initiated
+2023-08-01 17:23:24.331000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         AgentDataTable                                                              Resource creation Initiated
+2023-08-01 17:23:24.319000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         BucketsTable                                                                Resource creation Initiated
+2023-08-01 17:23:24.303000+00:00  CREATE_COMPLETE     AWS::SNS::Topic                              NotificationsTopic
+2023-08-01 17:23:24.257000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         DeploymentStatusTable                                                       Resource creation Initiated
+2023-08-01 17:23:24.205000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         SophosTapDataTable                                                          Resource creation Initiated
+2023-08-01 17:23:24.157000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         StorageAnalysisTable                                                        Resource creation Initiated
+2023-08-01 17:23:24.152000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         NotificationsTable                                                          Resource creation Initiated
+2023-08-01 17:23:24.128000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         GroupsTable                                                                 Resource creation Initiated
+2023-08-01 17:23:24.125000+00:00  CREATE_IN_PROGRESS  AWS::Logs::LogGroup                          CloudwatchLogsGroup                                                         Resource creation Initiated
+2023-08-01 17:23:24.119000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         BucketScanStatisticsTable                                                   Resource creation Initiated
+2023-08-01 17:23:24.079000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          SecurityHubEnabledParameter                                                 Resource creation Initiated
+2023-08-01 17:23:24.073000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         SubnetsTable                                                                Resource creation Initiated
+2023-08-01 17:23:24.060000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         LinkedAccountsTable                                                         Resource creation Initiated
+2023-08-01 17:23:24.059000+00:00  CREATE_IN_PROGRESS  AWS::ECS::Cluster                            Cluster                                                                     Resource creation Initiated
+2023-08-01 17:23:24.023000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         AgentsTable                                                                 Resource creation Initiated
+2023-08-01 17:23:24.010000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         FileCountTable                                                              Resource creation Initiated
+2023-08-01 17:23:24+00:00         CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         JobsTable                                                                   Resource creation Initiated
+2023-08-01 17:23:23.999000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          QuarantineInPrimaryAccountParameter                                         Resource creation Initiated
+2023-08-01 17:23:23.983000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ScheduledScansTable                                                         Resource creation Initiated
+2023-08-01 17:23:23.966000+00:00  CREATE_IN_PROGRESS  AWS::SNS::Topic                              NotificationsTopic                                                          Resource creation Initiated
+2023-08-01 17:23:23.966000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         MonthlyScanStatisticsTable                                                  Resource creation Initiated
+2023-08-01 17:23:23.931000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         AllowedInfectedFilesTable                                                   Resource creation Initiated
+2023-08-01 17:23:23.902000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         WorkDocsConnectionsTable                                                    Resource creation Initiated
+2023-08-01 17:23:23.898000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          MultiEngineScanningModeParameter                                            Resource creation Initiated
+2023-08-01 17:23:23.893000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         DailyScanStatisticsTable                                                    Resource creation Initiated
+2023-08-01 17:23:23.886000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         BucketClassificationStatisticsTable                                         Resource creation Initiated
+2023-08-01 17:23:23.870000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         LicenseFileHistoryTable                                                     Resource creation Initiated
+2023-08-01 17:23:23.832000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             CloudTrailLakePolicy                                                        Resource creation Initiated
+2023-08-01 17:23:23.829000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          OnlyScanWhenQueueThresholdExceededParameter                                 Resource creation Initiated
+2023-08-01 17:23:23.823000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentScanningEngineParameter                                                Resource creation Initiated
+2023-08-01 17:23:23.764000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         LinkedAccountMembershipTable                                                Resource creation Initiated
+2023-08-01 17:23:23.730000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ClassificationResultsTable                                                  Resource creation Initiated
+2023-08-01 17:23:23.645000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             ConsoleTaskPolicyAwsLicensing                                               Resource creation Initiated
+2023-08-01 17:23:23.597000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             ConsoleTaskPolicyApiLb                                                      Resource creation Initiated
+2023-08-01 17:23:23.426000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               Ec2ContainerRole                                                            Resource creation Initiated
+2023-08-01 17:23:23.267000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               EventBridgeRole                                                             Resource creation Initiated
+2023-08-01 17:23:23.075000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         VisibleGroupsTable
+2023-08-01 17:23:23.069000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Document                           AppConfigDocumentSchema
+2023-08-01 17:23:23.062000+00:00  CREATE_IN_PROGRESS  AWS::Logs::LogGroup                          CloudwatchLogsGroup
+2023-08-01 17:23:22.991000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         NotificationsTable
+2023-08-01 17:23:22.989000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ScheduledClassificationsTable
+2023-08-01 17:23:22.986000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         GroupMembershipTable
+2023-08-01 17:23:22.945000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         BucketsTable
+2023-08-01 17:23:22.916000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         BucketScanStatisticsTable
+2023-08-01 17:23:22.872000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         DeploymentStatusTable
+2023-08-01 17:23:22.855000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         SubnetsTable
+2023-08-01 17:23:22.838000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         GroupsTable
+2023-08-01 17:23:22.826000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         LinkedAccountsTable
+2023-08-01 17:23:22.823000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         SophosTapDataTable
+2023-08-01 17:23:22.815000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         FileCountTable
+2023-08-01 17:23:22.813000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         MonthlyScanStatisticsTable
+2023-08-01 17:23:22.809000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ConsoleTable
+2023-08-01 17:23:22.807000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         AllowedInfectedFilesTable
+2023-08-01 17:23:22.805000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         JobsTable
+2023-08-01 17:23:22.802000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         StorageAnalysisTable
+2023-08-01 17:23:22.800000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               Ec2ContainerRole
+2023-08-01 17:23:22.800000+00:00  CREATE_IN_PROGRESS  AWS::ECS::Cluster                            Cluster
+2023-08-01 17:23:22.799000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          SecurityHubEnabledParameter
+2023-08-01 17:23:22.799000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         LicenseFileHistoryTable
+2023-08-01 17:23:22.798000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          MultiEngineScanningModeParameter
+2023-08-01 17:23:22.778000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ProblemFilesTable
+2023-08-01 17:23:22.776000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               EventBridgeRole
+2023-08-01 17:23:22.770000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         AgentDataTable
+2023-08-01 17:23:22.769000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         WorkDocsConnectionsTable
+2023-08-01 17:23:22.763000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         BucketClassificationStatisticsTable
+2023-08-01 17:23:22.756000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ScheduledScansTable
+2023-08-01 17:23:22.738000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         AgentsTable
+2023-08-01 17:23:22.737000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ClassificationResultsTable
+2023-08-01 17:23:22.731000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             CloudTrailLakePolicy
+2023-08-01 17:23:22.729000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         DailyScanStatisticsTable
+2023-08-01 17:23:22.723000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          QuarantineInPrimaryAccountParameter
+2023-08-01 17:23:22.718000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentScanningEngineParameter
+2023-08-01 17:23:22.712000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         LinkedAccountMembershipTable
+2023-08-01 17:23:22.704000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             ConsoleTaskPolicyAwsLicensing
+2023-08-01 17:23:22.690000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             ConsoleTaskPolicyApiLb
+2023-08-01 17:23:22.674000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SecurityGroup                      ContainerSecurityGroup
+2023-08-01 17:23:22.623000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          OnlyScanWhenQueueThresholdExceededParameter
+2023-08-01 17:23:22.581000+00:00  CREATE_IN_PROGRESS  AWS::SNS::Topic                              NotificationsTopic
+2023-08-01 17:23:21.520000+00:00  CREATE_COMPLETE     AWS::IAM::Policy                             ConsoleTaskPolicy
+2023-08-01 17:23:20.788000+00:00  CREATE_COMPLETE     AWS::IAM::Policy                             AgentTaskPolicy
+2023-08-01 17:23:05.795000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             ConsoleTaskPolicy                                                           Resource creation Initiated
+2023-08-01 17:23:05.066000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             AgentTaskPolicy                                                             Resource creation Initiated
+2023-08-01 17:23:04.754000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             ConsoleTaskPolicy
+2023-08-01 17:23:04.029000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             AgentTaskPolicy
+2023-08-01 17:23:02.282000+00:00  CREATE_COMPLETE     AWS::IAM::Role                               AgentTaskRole
+2023-08-01 17:22:56.556000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          UserPoolClientIdParameter
+2023-08-01 17:22:56.262000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPoolUserToGroupAttachment  UserPoolUserAdminGroupAttachment
+2023-08-01 17:22:56.138000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolUserToGroupAttachment  UserPoolUserAdminGroupAttachment                                            Resource creation Initiated
+2023-08-01 17:22:55.889000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          UserPoolClientIdParameter                                                   Resource creation Initiated
+2023-08-01 17:22:55.028000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolUserToGroupAttachment  UserPoolUserAdminGroupAttachment
+2023-08-01 17:22:54.556000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          UserPoolClientIdParameter
+2023-08-01 17:22:53.893000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          UserPoolIdParameter
+2023-08-01 17:22:53.516000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPoolGroup                  UserPoolUserGroup
+2023-08-01 17:22:53.505000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPoolClient                 UserPoolClient
+2023-08-01 17:22:53.473000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPoolUser                   UserPoolUser
+2023-08-01 17:22:53.451000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPoolGroup                  UserPoolApiGroup
+2023-08-01 17:22:53.399000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolUserGroup                                                           Resource creation Initiated
+2023-08-01 17:22:53.394000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPoolGroup                  UserPoolAdminGroup
+2023-08-01 17:22:53.371000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolClient                 UserPoolClient                                                              Resource creation Initiated
+2023-08-01 17:22:53.327000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolApiGroup                                                            Resource creation Initiated
+2023-08-01 17:22:53.318000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolUser                   UserPoolUser                                                                Resource creation Initiated
+2023-08-01 17:22:53.266000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolAdminGroup                                                          Resource creation Initiated
+2023-08-01 17:22:53.227000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          UserPoolIdParameter                                                         Resource creation Initiated
+2023-08-01 17:22:53.191000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPoolGroup                  UserPoolReadOnlyGroup
+2023-08-01 17:22:53.186000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPoolGroup                  UserPoolPrimaryGroup
+2023-08-01 17:22:53.041000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolReadOnlyGroup                                                       Resource creation Initiated
+2023-08-01 17:22:53.037000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolPrimaryGroup                                                        Resource creation Initiated
+2023-08-01 17:22:52.092000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolClient                 UserPoolClient
+2023-08-01 17:22:52.085000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          UserPoolIdParameter
+2023-08-01 17:22:52.073000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolApiGroup
+2023-08-01 17:22:52.023000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolUser                   UserPoolUser
+2023-08-01 17:22:51.958000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolAdminGroup
+2023-08-01 17:22:51.946000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolPrimaryGroup
+2023-08-01 17:22:51.944000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolUserGroup
+2023-08-01 17:22:51.930000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolReadOnlyGroup
+2023-08-01 17:22:50.825000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPool                       UserPool
+2023-08-01 17:22:50.711000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPool                       UserPool                                                                    Resource creation Initiated
+2023-08-01 17:22:48.742000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               AgentTaskRole                                                               Resource creation Initiated
+2023-08-01 17:22:48.714000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPool                       UserPool
+2023-08-01 17:22:48.157000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               AgentTaskRole
+2023-08-01 17:22:47.726000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          AgentEcrImageUrlParameter
+2023-08-01 17:22:47.102000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentEcrImageUrlParameter                                                   Resource creation Initiated
+2023-08-01 17:22:47.073000+00:00  CREATE_COMPLETE     AWS::IAM::Role                               UserPoolSnsRole
+2023-08-01 17:22:46.898000+00:00  CREATE_COMPLETE     AWS::IAM::Role                               ExecutionRole
+2023-08-01 17:22:46.571000+00:00  CREATE_COMPLETE     AWS::IAM::Role                               ConsoleTaskRole
+2023-08-01 17:22:46.541000+00:00  CREATE_COMPLETE     AWS::IAM::Role                               AppConfigAgentConfigurationDocumentRole
+2023-08-01 17:22:35.697000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentEcrImageUrlParameter
+2023-08-01 17:22:34.774000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          CloudTrailLakeChannelArnParameter
+2023-08-01 17:22:34.600000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          AgentCpuParameter
+2023-08-01 17:22:34.518000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          LastPostUpgradeProcedureParameter
+2023-08-01 17:22:34.517000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          QuarantineBucketDaysToExpireParameter
+2023-08-01 17:22:34.508000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          CloudTrailLakeChannelNameParameter
+2023-08-01 17:22:34.468000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          EnableLargeFileScanningParameter
+2023-08-01 17:22:34.435000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          DynamoTableNamePrefixParameter
+2023-08-01 17:22:34.414000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          DynamoPointInTimeRecoveryEnabledParameter
+2023-08-01 17:22:34.359000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          LargeFileDiskSizeParameter
+2023-08-01 17:22:34.343000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          StorageAssessmentEnabledParameter
+2023-08-01 17:22:34.341000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          LargeFileEC2TagsParameter
+2023-08-01 17:22:34.328000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          CloudTrailLakeEventDataStoreNameParameter
+2023-08-01 17:22:34.316000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          PrivateMirrorParameter
+2023-08-01 17:22:34.309000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          QueueScalingThresholdParameter
+2023-08-01 17:22:34.306000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          EmailParameter
+2023-08-01 17:22:34.291000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          MaxNumAgentsParameter
+2023-08-01 17:22:34.286000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          CloudTrailLakeEnabledParameter
+2023-08-01 17:22:34.282000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          EcrAccountIdParameter
+2023-08-01 17:22:34.270000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          UserNameParameter
+2023-08-01 17:22:34.244000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          StackNameParameter
+2023-08-01 17:22:34.238000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          MinNumAgentsParameter
+2023-08-01 17:22:34.230000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          AutoProtectBucketTagKeyParameter
+2023-08-01 17:22:34.157000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          UserPoolClientSecretParameter
+2023-08-01 17:22:34.156000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          SubdomainParameter
+2023-08-01 17:22:34.122000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          AgentDiskSizeParameter
+2023-08-01 17:22:34.099000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          RegionParameter
+2023-08-01 17:22:34.093000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          LastUpgradeNotesSeenParameter
+2023-08-01 17:22:34.070000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          AgentMemoryParameter
+2023-08-01 17:22:34.001000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          CloudTrailLakeChannelArnParameter                                           Resource creation Initiated
+2023-08-01 17:22:33.967000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          CloudTrailLakeChannelNameParameter                                          Resource creation Initiated
+2023-08-01 17:22:33.956000+00:00  CREATE_COMPLETE     AWS::AppConfig::Environment                  AppConfigAgentEnvironment
+2023-08-01 17:22:33.947000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentCpuParameter                                                           Resource creation Initiated
+2023-08-01 17:22:33.908000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          LastPostUpgradeProcedureParameter                                           Resource creation Initiated
+2023-08-01 17:22:33.841000+00:00  CREATE_COMPLETE     AWS::AppConfig::DeploymentStrategy           AppConfigAgentDeploymentStrategy
+2023-08-01 17:22:33.831000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          EnableLargeFileScanningParameter                                            Resource creation Initiated
+2023-08-01 17:22:33.830000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          QuarantineBucketDaysToExpireParameter                                       Resource creation Initiated
+2023-08-01 17:22:33.816000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          LargeFileEC2TagsParameter                                                   Resource creation Initiated
+2023-08-01 17:22:33.772000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          DynamoPointInTimeRecoveryEnabledParameter                                   Resource creation Initiated
+2023-08-01 17:22:33.761000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          EmailParameter                                                              Resource creation Initiated
+2023-08-01 17:22:33.758000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          DynamoTableNamePrefixParameter                                              Resource creation Initiated
+2023-08-01 17:22:33.749000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          LargeFileDiskSizeParameter                                                  Resource creation Initiated
+2023-08-01 17:22:33.712000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          StorageAssessmentEnabledParameter                                           Resource creation Initiated
+2023-08-01 17:22:33.712000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          QueueScalingThresholdParameter                                              Resource creation Initiated
+2023-08-01 17:22:33.704000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          CloudTrailLakeEnabledParameter                                              Resource creation Initiated
+2023-08-01 17:22:33.703000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AutoProtectBucketTagKeyParameter                                            Resource creation Initiated
+2023-08-01 17:22:33.687000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          MaxNumAgentsParameter                                                       Resource creation Initiated
+2023-08-01 17:22:33.681000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::Environment                  AppConfigAgentEnvironment                                                   Resource creation Initiated
+2023-08-01 17:22:33.677000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          EcrAccountIdParameter                                                       Resource creation Initiated
+2023-08-01 17:22:33.674000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          MinNumAgentsParameter                                                       Resource creation Initiated
+2023-08-01 17:22:33.659000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          UserNameParameter                                                           Resource creation Initiated
+2023-08-01 17:22:33.657000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          PrivateMirrorParameter                                                      Resource creation Initiated
+2023-08-01 17:22:33.646000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          CloudTrailLakeEventDataStoreNameParameter                                   Resource creation Initiated
+2023-08-01 17:22:33.604000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          SubdomainParameter                                                          Resource creation Initiated
+2023-08-01 17:22:33.603000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          StackNameParameter                                                          Resource creation Initiated
+2023-08-01 17:22:33.596000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentDiskSizeParameter                                                      Resource creation Initiated
+2023-08-01 17:22:33.594000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::DeploymentStrategy           AppConfigAgentDeploymentStrategy                                            Resource creation Initiated
+2023-08-01 17:22:33.549000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          RegionParameter                                                             Resource creation Initiated
+2023-08-01 17:22:33.524000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          LastUpgradeNotesSeenParameter                                               Resource creation Initiated
+2023-08-01 17:22:33.509000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentMemoryParameter                                                        Resource creation Initiated
+2023-08-01 17:22:33.486000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          UserPoolClientSecretParameter                                               Resource creation Initiated
+2023-08-01 17:22:33.073000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               ConsoleTaskRole                                                             Resource creation Initiated
+2023-08-01 17:22:33.027000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               UserPoolSnsRole                                                             Resource creation Initiated
+2023-08-01 17:22:32.983000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               ExecutionRole                                                               Resource creation Initiated
+2023-08-01 17:22:32.931000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               AppConfigAgentConfigurationDocumentRole                                     Resource creation Initiated
+2023-08-01 17:22:32.894000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          CloudTrailLakeChannelNameParameter
+2023-08-01 17:22:32.735000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentCpuParameter
+2023-08-01 17:22:32.711000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          LastPostUpgradeProcedureParameter
+2023-08-01 17:22:32.711000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AutoProtectBucketTagKeyParameter
+2023-08-01 17:22:32.674000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          QueueScalingThresholdParameter
+2023-08-01 17:22:32.626000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          CloudTrailLakeChannelArnParameter
+2023-08-01 17:22:32.602000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          CloudTrailLakeEnabledParameter
+2023-08-01 17:22:32.570000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          PrivateMirrorParameter
+2023-08-01 17:22:32.570000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          LargeFileEC2TagsParameter
+2023-08-01 17:22:32.568000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentDiskSizeParameter
+2023-08-01 17:22:32.565000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               ConsoleTaskRole
+2023-08-01 17:22:32.562000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          DynamoPointInTimeRecoveryEnabledParameter
+2023-08-01 17:22:32.545000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          MinNumAgentsParameter
+2023-08-01 17:22:32.545000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          MaxNumAgentsParameter
+2023-08-01 17:22:32.543000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          StackNameParameter
+2023-08-01 17:22:32.529000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          SubdomainParameter
+2023-08-01 17:22:32.527000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          StorageAssessmentEnabledParameter
+2023-08-01 17:22:32.520000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          LastUpgradeNotesSeenParameter
+2023-08-01 17:22:32.519000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          DynamoTableNamePrefixParameter
+2023-08-01 17:22:32.519000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          CloudTrailLakeEventDataStoreNameParameter
+2023-08-01 17:22:32.518000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               UserPoolSnsRole
+2023-08-01 17:22:32.512000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          UserNameParameter
+2023-08-01 17:22:32.505000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               ExecutionRole
+2023-08-01 17:22:32.503000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::Environment                  AppConfigAgentEnvironment
+2023-08-01 17:22:32.498000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          EcrAccountIdParameter
+2023-08-01 17:22:32.494000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          LargeFileDiskSizeParameter
+2023-08-01 17:22:32.492000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          RegionParameter
+2023-08-01 17:22:32.488000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::DeploymentStrategy           AppConfigAgentDeploymentStrategy
+2023-08-01 17:22:32.487000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          EmailParameter
+2023-08-01 17:22:32.487000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentMemoryParameter
+2023-08-01 17:22:32.453000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          QuarantineBucketDaysToExpireParameter
+2023-08-01 17:22:32.441000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          UserPoolClientSecretParameter
+2023-08-01 17:22:32.438000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          EnableLargeFileScanningParameter
+2023-08-01 17:22:32.426000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               AppConfigAgentConfigurationDocumentRole
+2023-08-01 17:22:31.270000+00:00  CREATE_COMPLETE     AWS::AppConfig::Application                  AppConfigAgentApplication
+2023-08-01 17:22:31.002000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::Application                  AppConfigAgentApplication                                                   Resource creation Initiated
+2023-08-01 17:22:29.606000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::Application                  AppConfigAgentApplication
+2023-08-01 17:22:20.205000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack                   tCaT-default-04ab04-CssMftStack-15N4C0DJS0M7E-CssConsoleStack-2KNEQ933NBVN  User Initiated
+*****************************************************************************
+-----------------------------------------------------------------------------
+Tested on: Tuesday, 01. August 2023 12:34PM
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+Region: us-east-1
+StackName: tCaT-default-04ab04-CssMftStack-15N4C0DJS0M7E-CssConsoleStack-2KNEQ933NBVN
+*****************************************************************************
+ResourceStatusReason:  
+Stack launch was successful
+*****************************************************************************
+*****************************************************************************
+Events:  
+TimeStamp                         ResourceStatus      ResourceType                                 LogicalResourceId                                                           ResourceStatusReason
+--------------------------------  ------------------  -------------------------------------------  --------------------------------------------------------------------------  ---------------------------
+2023-08-01 17:29:31.226000+00:00  CREATE_COMPLETE     AWS::CloudFormation::Stack                   tCaT-default-04ab04-CssMftStack-15N4C0DJS0M7E-CssConsoleStack-2KNEQ933NBVN
+2023-08-01 17:29:25.746000+00:00  CREATE_COMPLETE     AWS::ApplicationAutoScaling::ScalableTarget  AutoScalingTarget
+2023-08-01 17:29:25.460000+00:00  CREATE_IN_PROGRESS  AWS::ApplicationAutoScaling::ScalableTarget  AutoScalingTarget                                                           Resource creation Initiated
+2023-08-01 17:29:24.119000+00:00  CREATE_IN_PROGRESS  AWS::ApplicationAutoScaling::ScalableTarget  AutoScalingTarget
+2023-08-01 17:29:22.634000+00:00  CREATE_COMPLETE     AWS::ECS::Service                            Service
+2023-08-01 17:26:01.730000+00:00  CREATE_IN_PROGRESS  AWS::ECS::Service                            Service                                                                     Resource creation Initiated
+2023-08-01 17:25:59.675000+00:00  CREATE_IN_PROGRESS  AWS::ECS::Service                            Service
+2023-08-01 17:25:57.896000+00:00  CREATE_COMPLETE     AWS::ECS::TaskDefinition                     TaskDefinition
+2023-08-01 17:25:55.933000+00:00  CREATE_IN_PROGRESS  AWS::ECS::TaskDefinition                     TaskDefinition                                                              Resource creation Initiated
+2023-08-01 17:25:52.586000+00:00  CREATE_IN_PROGRESS  AWS::ECS::TaskDefinition                     TaskDefinition
+2023-08-01 17:25:50.966000+00:00  CREATE_COMPLETE     AWS::IAM::InstanceProfile                    Ec2ContainerInstanceProfile
+2023-08-01 17:24:52.538000+00:00  CREATE_COMPLETE     AWS::AppConfig::Deployment                   AppConfigAgentDeployment
+2023-08-01 17:24:51.950000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::Deployment                   AppConfigAgentDeployment                                                    Resource creation Initiated
+2023-08-01 17:24:50.342000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::Deployment                   AppConfigAgentDeployment
+2023-08-01 17:24:49.094000+00:00  CREATE_COMPLETE     AWS::AppConfig::ConfigurationProfile         AppConfigProfile
+2023-08-01 17:24:48.728000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::ConfigurationProfile         AppConfigProfile                                                            Resource creation Initiated
+2023-08-01 17:24:47.580000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::ConfigurationProfile         AppConfigProfile
+2023-08-01 17:24:46.453000+00:00  CREATE_COMPLETE     AWS::IAM::Policy                             AppConfigAgentConfigurationDocumentPolicy
+2023-08-01 17:24:30.787000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             AppConfigAgentConfigurationDocumentPolicy                                   Resource creation Initiated
+2023-08-01 17:24:29.694000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             AppConfigAgentConfigurationDocumentPolicy
+2023-08-01 17:24:28.266000+00:00  CREATE_COMPLETE     AWS::SSM::Document                           AppConfigDocument
+2023-08-01 17:23:57.734000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Document                           AppConfigDocument                                                           Resource creation Initiated
+2023-08-01 17:23:56.465000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Document                           AppConfigDocument
+2023-08-01 17:23:56.138000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         ProblemFilesTable
+2023-08-01 17:23:55.552000+00:00  CREATE_COMPLETE     AWS::IAM::Policy                             Ec2ContainerPolicy
+2023-08-01 17:23:55.421000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         DailyScanStatisticsTable
+2023-08-01 17:23:55.384000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         AgentsTable
+2023-08-01 17:23:55.276000+00:00  CREATE_COMPLETE     AWS::SSM::Document                           AppConfigDocumentSchema
+2023-08-01 17:23:55.101000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         ClassificationResultsTable
+2023-08-01 17:23:54.970000+00:00  CREATE_COMPLETE     AWS::IAM::Policy                             EventBridgePolicy
+2023-08-01 17:23:45.699000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         AgentDataTable
+2023-08-01 17:23:45.401000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         NotificationsTable
+2023-08-01 17:23:45.391000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         JobsTable
+2023-08-01 17:23:45.366000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         StorageAnalysisTable
+2023-08-01 17:23:45.348000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         MonthlyScanStatisticsTable
+2023-08-01 17:23:45.329000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         BucketScanStatisticsTable
+2023-08-01 17:23:45.237000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         FileCountTable
+2023-08-01 17:23:45.163000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         AllowedInfectedFilesTable
+2023-08-01 17:23:45.096000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         BucketClassificationStatisticsTable
+2023-08-01 17:23:40.152000+00:00  CREATE_IN_PROGRESS  AWS::IAM::InstanceProfile                    Ec2ContainerInstanceProfile                                                 Resource creation Initiated
+2023-08-01 17:23:39.981000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             Ec2ContainerPolicy                                                          Resource creation Initiated
+2023-08-01 17:23:39.420000+00:00  CREATE_COMPLETE     AWS::IAM::Policy                             CloudTrailLakePolicy
+2023-08-01 17:23:39.349000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             EventBridgePolicy                                                           Resource creation Initiated
+2023-08-01 17:23:39.230000+00:00  CREATE_COMPLETE     AWS::IAM::Policy                             ConsoleTaskPolicyAwsLicensing
+2023-08-01 17:23:39.187000+00:00  CREATE_COMPLETE     AWS::IAM::Policy                             ConsoleTaskPolicyApiLb
+2023-08-01 17:23:38.959000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             Ec2ContainerPolicy
+2023-08-01 17:23:38.827000+00:00  CREATE_IN_PROGRESS  AWS::IAM::InstanceProfile                    Ec2ContainerInstanceProfile
+2023-08-01 17:23:38.471000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         VisibleGroupsTable
+2023-08-01 17:23:38.314000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             EventBridgePolicy
+2023-08-01 17:23:38.184000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         GroupMembershipTable
+2023-08-01 17:23:37.362000+00:00  CREATE_COMPLETE     AWS::IAM::Role                               Ec2ContainerRole
+2023-08-01 17:23:36.850000+00:00  CREATE_COMPLETE     AWS::IAM::Role                               EventBridgeRole
+2023-08-01 17:23:35.772000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         ScheduledClassificationsTable
+2023-08-01 17:23:35.439000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         ConsoleTable
+2023-08-01 17:23:35.212000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         BucketsTable
+2023-08-01 17:23:35.211000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         DeploymentStatusTable
+2023-08-01 17:23:35.163000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         SophosTapDataTable
+2023-08-01 17:23:35.154000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         SubnetsTable
+2023-08-01 17:23:35.093000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         LinkedAccountsTable
+2023-08-01 17:23:35.052000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         GroupsTable
+2023-08-01 17:23:34.938000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         ScheduledScansTable
+2023-08-01 17:23:34.887000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         WorkDocsConnectionsTable
+2023-08-01 17:23:34.872000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         LicenseFileHistoryTable
+2023-08-01 17:23:34.613000+00:00  CREATE_COMPLETE     AWS::DynamoDB::Table                         LinkedAccountMembershipTable
+2023-08-01 17:23:28.892000+00:00  CREATE_COMPLETE     AWS::EC2::SecurityGroup                      ContainerSecurityGroup
+2023-08-01 17:23:27.554000+00:00  CREATE_COMPLETE     AWS::ECS::Cluster                            Cluster
+2023-08-01 17:23:27.504000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SecurityGroup                      ContainerSecurityGroup                                                      Resource creation Initiated
+2023-08-01 17:23:27.477000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         VisibleGroupsTable                                                          Resource creation Initiated
+2023-08-01 17:23:27.293000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         GroupMembershipTable                                                        Resource creation Initiated
+2023-08-01 17:23:26.706000+00:00  CREATE_COMPLETE     AWS::SNS::TopicPolicy                        NotificationsTopicPolicy
+2023-08-01 17:23:26.324000+00:00  CREATE_IN_PROGRESS  AWS::SNS::TopicPolicy                        NotificationsTopicPolicy                                                    Resource creation Initiated
+2023-08-01 17:23:25.429000+00:00  CREATE_IN_PROGRESS  AWS::SNS::TopicPolicy                        NotificationsTopicPolicy
+2023-08-01 17:23:24.933000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ScheduledClassificationsTable                                               Resource creation Initiated
+2023-08-01 17:23:24.686000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          QuarantineInPrimaryAccountParameter
+2023-08-01 17:23:24.622000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          SecurityHubEnabledParameter
+2023-08-01 17:23:24.621000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ProblemFilesTable                                                           Resource creation Initiated
+2023-08-01 17:23:24.611000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          MultiEngineScanningModeParameter
+2023-08-01 17:23:24.458000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          OnlyScanWhenQueueThresholdExceededParameter
+2023-08-01 17:23:24.417000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ConsoleTable                                                                Resource creation Initiated
+2023-08-01 17:23:24.385000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          AgentScanningEngineParameter
+2023-08-01 17:23:24.364000+00:00  CREATE_COMPLETE     AWS::Logs::LogGroup                          CloudwatchLogsGroup
+2023-08-01 17:23:24.364000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Document                           AppConfigDocumentSchema                                                     Resource creation Initiated
+2023-08-01 17:23:24.331000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         AgentDataTable                                                              Resource creation Initiated
+2023-08-01 17:23:24.319000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         BucketsTable                                                                Resource creation Initiated
+2023-08-01 17:23:24.303000+00:00  CREATE_COMPLETE     AWS::SNS::Topic                              NotificationsTopic
+2023-08-01 17:23:24.257000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         DeploymentStatusTable                                                       Resource creation Initiated
+2023-08-01 17:23:24.205000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         SophosTapDataTable                                                          Resource creation Initiated
+2023-08-01 17:23:24.157000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         StorageAnalysisTable                                                        Resource creation Initiated
+2023-08-01 17:23:24.152000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         NotificationsTable                                                          Resource creation Initiated
+2023-08-01 17:23:24.128000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         GroupsTable                                                                 Resource creation Initiated
+2023-08-01 17:23:24.125000+00:00  CREATE_IN_PROGRESS  AWS::Logs::LogGroup                          CloudwatchLogsGroup                                                         Resource creation Initiated
+2023-08-01 17:23:24.119000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         BucketScanStatisticsTable                                                   Resource creation Initiated
+2023-08-01 17:23:24.079000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          SecurityHubEnabledParameter                                                 Resource creation Initiated
+2023-08-01 17:23:24.073000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         SubnetsTable                                                                Resource creation Initiated
+2023-08-01 17:23:24.060000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         LinkedAccountsTable                                                         Resource creation Initiated
+2023-08-01 17:23:24.059000+00:00  CREATE_IN_PROGRESS  AWS::ECS::Cluster                            Cluster                                                                     Resource creation Initiated
+2023-08-01 17:23:24.023000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         AgentsTable                                                                 Resource creation Initiated
+2023-08-01 17:23:24.010000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         FileCountTable                                                              Resource creation Initiated
+2023-08-01 17:23:24+00:00         CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         JobsTable                                                                   Resource creation Initiated
+2023-08-01 17:23:23.999000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          QuarantineInPrimaryAccountParameter                                         Resource creation Initiated
+2023-08-01 17:23:23.983000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ScheduledScansTable                                                         Resource creation Initiated
+2023-08-01 17:23:23.966000+00:00  CREATE_IN_PROGRESS  AWS::SNS::Topic                              NotificationsTopic                                                          Resource creation Initiated
+2023-08-01 17:23:23.966000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         MonthlyScanStatisticsTable                                                  Resource creation Initiated
+2023-08-01 17:23:23.931000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         AllowedInfectedFilesTable                                                   Resource creation Initiated
+2023-08-01 17:23:23.902000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         WorkDocsConnectionsTable                                                    Resource creation Initiated
+2023-08-01 17:23:23.898000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          MultiEngineScanningModeParameter                                            Resource creation Initiated
+2023-08-01 17:23:23.893000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         DailyScanStatisticsTable                                                    Resource creation Initiated
+2023-08-01 17:23:23.886000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         BucketClassificationStatisticsTable                                         Resource creation Initiated
+2023-08-01 17:23:23.870000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         LicenseFileHistoryTable                                                     Resource creation Initiated
+2023-08-01 17:23:23.832000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             CloudTrailLakePolicy                                                        Resource creation Initiated
+2023-08-01 17:23:23.829000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          OnlyScanWhenQueueThresholdExceededParameter                                 Resource creation Initiated
+2023-08-01 17:23:23.823000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentScanningEngineParameter                                                Resource creation Initiated
+2023-08-01 17:23:23.764000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         LinkedAccountMembershipTable                                                Resource creation Initiated
+2023-08-01 17:23:23.730000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ClassificationResultsTable                                                  Resource creation Initiated
+2023-08-01 17:23:23.645000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             ConsoleTaskPolicyAwsLicensing                                               Resource creation Initiated
+2023-08-01 17:23:23.597000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             ConsoleTaskPolicyApiLb                                                      Resource creation Initiated
+2023-08-01 17:23:23.426000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               Ec2ContainerRole                                                            Resource creation Initiated
+2023-08-01 17:23:23.267000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               EventBridgeRole                                                             Resource creation Initiated
+2023-08-01 17:23:23.075000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         VisibleGroupsTable
+2023-08-01 17:23:23.069000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Document                           AppConfigDocumentSchema
+2023-08-01 17:23:23.062000+00:00  CREATE_IN_PROGRESS  AWS::Logs::LogGroup                          CloudwatchLogsGroup
+2023-08-01 17:23:22.991000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         NotificationsTable
+2023-08-01 17:23:22.989000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ScheduledClassificationsTable
+2023-08-01 17:23:22.986000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         GroupMembershipTable
+2023-08-01 17:23:22.945000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         BucketsTable
+2023-08-01 17:23:22.916000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         BucketScanStatisticsTable
+2023-08-01 17:23:22.872000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         DeploymentStatusTable
+2023-08-01 17:23:22.855000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         SubnetsTable
+2023-08-01 17:23:22.838000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         GroupsTable
+2023-08-01 17:23:22.826000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         LinkedAccountsTable
+2023-08-01 17:23:22.823000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         SophosTapDataTable
+2023-08-01 17:23:22.815000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         FileCountTable
+2023-08-01 17:23:22.813000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         MonthlyScanStatisticsTable
+2023-08-01 17:23:22.809000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ConsoleTable
+2023-08-01 17:23:22.807000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         AllowedInfectedFilesTable
+2023-08-01 17:23:22.805000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         JobsTable
+2023-08-01 17:23:22.802000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         StorageAnalysisTable
+2023-08-01 17:23:22.800000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               Ec2ContainerRole
+2023-08-01 17:23:22.800000+00:00  CREATE_IN_PROGRESS  AWS::ECS::Cluster                            Cluster
+2023-08-01 17:23:22.799000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          SecurityHubEnabledParameter
+2023-08-01 17:23:22.799000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         LicenseFileHistoryTable
+2023-08-01 17:23:22.798000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          MultiEngineScanningModeParameter
+2023-08-01 17:23:22.778000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ProblemFilesTable
+2023-08-01 17:23:22.776000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               EventBridgeRole
+2023-08-01 17:23:22.770000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         AgentDataTable
+2023-08-01 17:23:22.769000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         WorkDocsConnectionsTable
+2023-08-01 17:23:22.763000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         BucketClassificationStatisticsTable
+2023-08-01 17:23:22.756000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ScheduledScansTable
+2023-08-01 17:23:22.738000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         AgentsTable
+2023-08-01 17:23:22.737000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         ClassificationResultsTable
+2023-08-01 17:23:22.731000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             CloudTrailLakePolicy
+2023-08-01 17:23:22.729000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         DailyScanStatisticsTable
+2023-08-01 17:23:22.723000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          QuarantineInPrimaryAccountParameter
+2023-08-01 17:23:22.718000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentScanningEngineParameter
+2023-08-01 17:23:22.712000+00:00  CREATE_IN_PROGRESS  AWS::DynamoDB::Table                         LinkedAccountMembershipTable
+2023-08-01 17:23:22.704000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             ConsoleTaskPolicyAwsLicensing
+2023-08-01 17:23:22.690000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             ConsoleTaskPolicyApiLb
+2023-08-01 17:23:22.674000+00:00  CREATE_IN_PROGRESS  AWS::EC2::SecurityGroup                      ContainerSecurityGroup
+2023-08-01 17:23:22.623000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          OnlyScanWhenQueueThresholdExceededParameter
+2023-08-01 17:23:22.581000+00:00  CREATE_IN_PROGRESS  AWS::SNS::Topic                              NotificationsTopic
+2023-08-01 17:23:21.520000+00:00  CREATE_COMPLETE     AWS::IAM::Policy                             ConsoleTaskPolicy
+2023-08-01 17:23:20.788000+00:00  CREATE_COMPLETE     AWS::IAM::Policy                             AgentTaskPolicy
+2023-08-01 17:23:05.795000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             ConsoleTaskPolicy                                                           Resource creation Initiated
+2023-08-01 17:23:05.066000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             AgentTaskPolicy                                                             Resource creation Initiated
+2023-08-01 17:23:04.754000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             ConsoleTaskPolicy
+2023-08-01 17:23:04.029000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Policy                             AgentTaskPolicy
+2023-08-01 17:23:02.282000+00:00  CREATE_COMPLETE     AWS::IAM::Role                               AgentTaskRole
+2023-08-01 17:22:56.556000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          UserPoolClientIdParameter
+2023-08-01 17:22:56.262000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPoolUserToGroupAttachment  UserPoolUserAdminGroupAttachment
+2023-08-01 17:22:56.138000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolUserToGroupAttachment  UserPoolUserAdminGroupAttachment                                            Resource creation Initiated
+2023-08-01 17:22:55.889000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          UserPoolClientIdParameter                                                   Resource creation Initiated
+2023-08-01 17:22:55.028000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolUserToGroupAttachment  UserPoolUserAdminGroupAttachment
+2023-08-01 17:22:54.556000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          UserPoolClientIdParameter
+2023-08-01 17:22:53.893000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          UserPoolIdParameter
+2023-08-01 17:22:53.516000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPoolGroup                  UserPoolUserGroup
+2023-08-01 17:22:53.505000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPoolClient                 UserPoolClient
+2023-08-01 17:22:53.473000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPoolUser                   UserPoolUser
+2023-08-01 17:22:53.451000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPoolGroup                  UserPoolApiGroup
+2023-08-01 17:22:53.399000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolUserGroup                                                           Resource creation Initiated
+2023-08-01 17:22:53.394000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPoolGroup                  UserPoolAdminGroup
+2023-08-01 17:22:53.371000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolClient                 UserPoolClient                                                              Resource creation Initiated
+2023-08-01 17:22:53.327000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolApiGroup                                                            Resource creation Initiated
+2023-08-01 17:22:53.318000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolUser                   UserPoolUser                                                                Resource creation Initiated
+2023-08-01 17:22:53.266000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolAdminGroup                                                          Resource creation Initiated
+2023-08-01 17:22:53.227000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          UserPoolIdParameter                                                         Resource creation Initiated
+2023-08-01 17:22:53.191000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPoolGroup                  UserPoolReadOnlyGroup
+2023-08-01 17:22:53.186000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPoolGroup                  UserPoolPrimaryGroup
+2023-08-01 17:22:53.041000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolReadOnlyGroup                                                       Resource creation Initiated
+2023-08-01 17:22:53.037000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolPrimaryGroup                                                        Resource creation Initiated
+2023-08-01 17:22:52.092000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolClient                 UserPoolClient
+2023-08-01 17:22:52.085000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          UserPoolIdParameter
+2023-08-01 17:22:52.073000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolApiGroup
+2023-08-01 17:22:52.023000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolUser                   UserPoolUser
+2023-08-01 17:22:51.958000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolAdminGroup
+2023-08-01 17:22:51.946000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolPrimaryGroup
+2023-08-01 17:22:51.944000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolUserGroup
+2023-08-01 17:22:51.930000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPoolGroup                  UserPoolReadOnlyGroup
+2023-08-01 17:22:50.825000+00:00  CREATE_COMPLETE     AWS::Cognito::UserPool                       UserPool
+2023-08-01 17:22:50.711000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPool                       UserPool                                                                    Resource creation Initiated
+2023-08-01 17:22:48.742000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               AgentTaskRole                                                               Resource creation Initiated
+2023-08-01 17:22:48.714000+00:00  CREATE_IN_PROGRESS  AWS::Cognito::UserPool                       UserPool
+2023-08-01 17:22:48.157000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               AgentTaskRole
+2023-08-01 17:22:47.726000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          AgentEcrImageUrlParameter
+2023-08-01 17:22:47.102000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentEcrImageUrlParameter                                                   Resource creation Initiated
+2023-08-01 17:22:47.073000+00:00  CREATE_COMPLETE     AWS::IAM::Role                               UserPoolSnsRole
+2023-08-01 17:22:46.898000+00:00  CREATE_COMPLETE     AWS::IAM::Role                               ExecutionRole
+2023-08-01 17:22:46.571000+00:00  CREATE_COMPLETE     AWS::IAM::Role                               ConsoleTaskRole
+2023-08-01 17:22:46.541000+00:00  CREATE_COMPLETE     AWS::IAM::Role                               AppConfigAgentConfigurationDocumentRole
+2023-08-01 17:22:35.697000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentEcrImageUrlParameter
+2023-08-01 17:22:34.774000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          CloudTrailLakeChannelArnParameter
+2023-08-01 17:22:34.600000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          AgentCpuParameter
+2023-08-01 17:22:34.518000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          LastPostUpgradeProcedureParameter
+2023-08-01 17:22:34.517000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          QuarantineBucketDaysToExpireParameter
+2023-08-01 17:22:34.508000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          CloudTrailLakeChannelNameParameter
+2023-08-01 17:22:34.468000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          EnableLargeFileScanningParameter
+2023-08-01 17:22:34.435000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          DynamoTableNamePrefixParameter
+2023-08-01 17:22:34.414000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          DynamoPointInTimeRecoveryEnabledParameter
+2023-08-01 17:22:34.359000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          LargeFileDiskSizeParameter
+2023-08-01 17:22:34.343000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          StorageAssessmentEnabledParameter
+2023-08-01 17:22:34.341000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          LargeFileEC2TagsParameter
+2023-08-01 17:22:34.328000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          CloudTrailLakeEventDataStoreNameParameter
+2023-08-01 17:22:34.316000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          PrivateMirrorParameter
+2023-08-01 17:22:34.309000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          QueueScalingThresholdParameter
+2023-08-01 17:22:34.306000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          EmailParameter
+2023-08-01 17:22:34.291000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          MaxNumAgentsParameter
+2023-08-01 17:22:34.286000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          CloudTrailLakeEnabledParameter
+2023-08-01 17:22:34.282000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          EcrAccountIdParameter
+2023-08-01 17:22:34.270000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          UserNameParameter
+2023-08-01 17:22:34.244000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          StackNameParameter
+2023-08-01 17:22:34.238000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          MinNumAgentsParameter
+2023-08-01 17:22:34.230000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          AutoProtectBucketTagKeyParameter
+2023-08-01 17:22:34.157000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          UserPoolClientSecretParameter
+2023-08-01 17:22:34.156000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          SubdomainParameter
+2023-08-01 17:22:34.122000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          AgentDiskSizeParameter
+2023-08-01 17:22:34.099000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          RegionParameter
+2023-08-01 17:22:34.093000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          LastUpgradeNotesSeenParameter
+2023-08-01 17:22:34.070000+00:00  CREATE_COMPLETE     AWS::SSM::Parameter                          AgentMemoryParameter
+2023-08-01 17:22:34.001000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          CloudTrailLakeChannelArnParameter                                           Resource creation Initiated
+2023-08-01 17:22:33.967000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          CloudTrailLakeChannelNameParameter                                          Resource creation Initiated
+2023-08-01 17:22:33.956000+00:00  CREATE_COMPLETE     AWS::AppConfig::Environment                  AppConfigAgentEnvironment
+2023-08-01 17:22:33.947000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentCpuParameter                                                           Resource creation Initiated
+2023-08-01 17:22:33.908000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          LastPostUpgradeProcedureParameter                                           Resource creation Initiated
+2023-08-01 17:22:33.841000+00:00  CREATE_COMPLETE     AWS::AppConfig::DeploymentStrategy           AppConfigAgentDeploymentStrategy
+2023-08-01 17:22:33.831000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          EnableLargeFileScanningParameter                                            Resource creation Initiated
+2023-08-01 17:22:33.830000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          QuarantineBucketDaysToExpireParameter                                       Resource creation Initiated
+2023-08-01 17:22:33.816000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          LargeFileEC2TagsParameter                                                   Resource creation Initiated
+2023-08-01 17:22:33.772000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          DynamoPointInTimeRecoveryEnabledParameter                                   Resource creation Initiated
+2023-08-01 17:22:33.761000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          EmailParameter                                                              Resource creation Initiated
+2023-08-01 17:22:33.758000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          DynamoTableNamePrefixParameter                                              Resource creation Initiated
+2023-08-01 17:22:33.749000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          LargeFileDiskSizeParameter                                                  Resource creation Initiated
+2023-08-01 17:22:33.712000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          StorageAssessmentEnabledParameter                                           Resource creation Initiated
+2023-08-01 17:22:33.712000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          QueueScalingThresholdParameter                                              Resource creation Initiated
+2023-08-01 17:22:33.704000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          CloudTrailLakeEnabledParameter                                              Resource creation Initiated
+2023-08-01 17:22:33.703000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AutoProtectBucketTagKeyParameter                                            Resource creation Initiated
+2023-08-01 17:22:33.687000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          MaxNumAgentsParameter                                                       Resource creation Initiated
+2023-08-01 17:22:33.681000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::Environment                  AppConfigAgentEnvironment                                                   Resource creation Initiated
+2023-08-01 17:22:33.677000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          EcrAccountIdParameter                                                       Resource creation Initiated
+2023-08-01 17:22:33.674000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          MinNumAgentsParameter                                                       Resource creation Initiated
+2023-08-01 17:22:33.659000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          UserNameParameter                                                           Resource creation Initiated
+2023-08-01 17:22:33.657000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          PrivateMirrorParameter                                                      Resource creation Initiated
+2023-08-01 17:22:33.646000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          CloudTrailLakeEventDataStoreNameParameter                                   Resource creation Initiated
+2023-08-01 17:22:33.604000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          SubdomainParameter                                                          Resource creation Initiated
+2023-08-01 17:22:33.603000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          StackNameParameter                                                          Resource creation Initiated
+2023-08-01 17:22:33.596000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentDiskSizeParameter                                                      Resource creation Initiated
+2023-08-01 17:22:33.594000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::DeploymentStrategy           AppConfigAgentDeploymentStrategy                                            Resource creation Initiated
+2023-08-01 17:22:33.549000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          RegionParameter                                                             Resource creation Initiated
+2023-08-01 17:22:33.524000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          LastUpgradeNotesSeenParameter                                               Resource creation Initiated
+2023-08-01 17:22:33.509000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentMemoryParameter                                                        Resource creation Initiated
+2023-08-01 17:22:33.486000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          UserPoolClientSecretParameter                                               Resource creation Initiated
+2023-08-01 17:22:33.073000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               ConsoleTaskRole                                                             Resource creation Initiated
+2023-08-01 17:22:33.027000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               UserPoolSnsRole                                                             Resource creation Initiated
+2023-08-01 17:22:32.983000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               ExecutionRole                                                               Resource creation Initiated
+2023-08-01 17:22:32.931000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               AppConfigAgentConfigurationDocumentRole                                     Resource creation Initiated
+2023-08-01 17:22:32.894000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          CloudTrailLakeChannelNameParameter
+2023-08-01 17:22:32.735000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentCpuParameter
+2023-08-01 17:22:32.711000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          LastPostUpgradeProcedureParameter
+2023-08-01 17:22:32.711000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AutoProtectBucketTagKeyParameter
+2023-08-01 17:22:32.674000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          QueueScalingThresholdParameter
+2023-08-01 17:22:32.626000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          CloudTrailLakeChannelArnParameter
+2023-08-01 17:22:32.602000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          CloudTrailLakeEnabledParameter
+2023-08-01 17:22:32.570000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          PrivateMirrorParameter
+2023-08-01 17:22:32.570000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          LargeFileEC2TagsParameter
+2023-08-01 17:22:32.568000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentDiskSizeParameter
+2023-08-01 17:22:32.565000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               ConsoleTaskRole
+2023-08-01 17:22:32.562000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          DynamoPointInTimeRecoveryEnabledParameter
+2023-08-01 17:22:32.545000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          MinNumAgentsParameter
+2023-08-01 17:22:32.545000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          MaxNumAgentsParameter
+2023-08-01 17:22:32.543000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          StackNameParameter
+2023-08-01 17:22:32.529000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          SubdomainParameter
+2023-08-01 17:22:32.527000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          StorageAssessmentEnabledParameter
+2023-08-01 17:22:32.520000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          LastUpgradeNotesSeenParameter
+2023-08-01 17:22:32.519000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          DynamoTableNamePrefixParameter
+2023-08-01 17:22:32.519000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          CloudTrailLakeEventDataStoreNameParameter
+2023-08-01 17:22:32.518000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               UserPoolSnsRole
+2023-08-01 17:22:32.512000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          UserNameParameter
+2023-08-01 17:22:32.505000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               ExecutionRole
+2023-08-01 17:22:32.503000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::Environment                  AppConfigAgentEnvironment
+2023-08-01 17:22:32.498000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          EcrAccountIdParameter
+2023-08-01 17:22:32.494000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          LargeFileDiskSizeParameter
+2023-08-01 17:22:32.492000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          RegionParameter
+2023-08-01 17:22:32.488000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::DeploymentStrategy           AppConfigAgentDeploymentStrategy
+2023-08-01 17:22:32.487000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          EmailParameter
+2023-08-01 17:22:32.487000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          AgentMemoryParameter
+2023-08-01 17:22:32.453000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          QuarantineBucketDaysToExpireParameter
+2023-08-01 17:22:32.441000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          UserPoolClientSecretParameter
+2023-08-01 17:22:32.438000+00:00  CREATE_IN_PROGRESS  AWS::SSM::Parameter                          EnableLargeFileScanningParameter
+2023-08-01 17:22:32.426000+00:00  CREATE_IN_PROGRESS  AWS::IAM::Role                               AppConfigAgentConfigurationDocumentRole
+2023-08-01 17:22:31.270000+00:00  CREATE_COMPLETE     AWS::AppConfig::Application                  AppConfigAgentApplication
+2023-08-01 17:22:31.002000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::Application                  AppConfigAgentApplication                                                   Resource creation Initiated
+2023-08-01 17:22:29.606000+00:00  CREATE_IN_PROGRESS  AWS::AppConfig::Application                  AppConfigAgentApplication
+2023-08-01 17:22:20.205000+00:00  CREATE_IN_PROGRESS  AWS::CloudFormation::Stack                   tCaT-default-04ab04-CssMftStack-15N4C0DJS0M7E-CssConsoleStack-2KNEQ933NBVN  User Initiated
+*****************************************************************************
+-----------------------------------------------------------------------------
+Tested on: Tuesday, 01. August 2023 12:34PM
+-----------------------------------------------------------------------------
+
