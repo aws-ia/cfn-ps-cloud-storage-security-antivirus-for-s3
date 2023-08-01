@@ -5,7 +5,7 @@ AWS Cloud.
 
 [#architecture1]
 .Partner Solution architecture for Antivirus for Managed File Transfers on AWS
-image::../images/Antivirus-for-Managed-File-Transfers-architecture-diagram.png[Architecture]
+image::../docs/deployment_guide/images/Antivirus-for-Managed-File-Transfers-architecture-diagram.png[Architecture]
 
 As shown in <<architecture1>>, this Partner Solution sets up the following:
 
