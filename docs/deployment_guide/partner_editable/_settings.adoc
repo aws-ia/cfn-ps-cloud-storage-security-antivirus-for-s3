@@ -1,17 +1,11 @@
-:partner-solution-project-name: partner-solution-repo-name
+:partner-solution-project-name: quickstart-cloud-storage-security-antivirus-for-amazon-s3
 :partner-solution-github-org: aws-quickstart
-:partner-product-name: Full Product Name
-:partner-product-short-name: Product Name
-:partner-company-name: Example Company Name, Ltd.
-:doc-month: January
+:partner-product-name: Antivirus for Managed File Transfers
+:partner-product-short-name: Antivirus for Managed File Transfers
+:partner-company-name: Cloud Storage Security
+:doc-month: July
 :doc-year: 2023
-:partner-contributors: John Smith, {partner-company-name}
-// :other-contributors: Akua Mansa, Trek10
-:aws-contributors: Janine Singh, AWS IoT Partner team
-:aws-ia-contributors: Toni Jones, AWS Integration & Automation team
-:deployment_time: 15 minutes
+:partner-contributors: David Dreyer, Aaron Gettings, and Sarah Heiermann-Walker  {Cloud Storage Security}
+:aws-contributors: Russ Boyer, AWS Transfer Family team
+:deployment_time: 10-15 minutes
 :default_deployment_region: us-east-1
-// :private_repo:
-
-
-// For instructions on creating this deployment guide, refer to "Build your AWS Partner Solution documentation" (https://aws-ia-us-west-2.s3.us-west-2.amazonaws.com/docs/content/index.html#/).
