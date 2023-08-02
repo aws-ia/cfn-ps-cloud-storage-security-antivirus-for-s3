@@ -5,7 +5,7 @@
 :partner-company-name: Cloud Storage Security
 :doc-month: July
 :doc-year: 2023
-:partner-contributors: David Dreyer, Aaron Gettings, and Sarah Heiermann-Walker  {Cloud Storage Security}
-:aws-contributors: Russ Boyer, AWS Transfer Family team
+:partner-contributors: David Dreyer, Aaron Gettings, and Sarah Heiermann-Walker, Cloud Storage Security
+:aws-contributors: Russ Boyer, AWS Transfer Family team, and Dave May, AWS Integration and Automation
 :deployment_time: 10-15 minutes
 :default_deployment_region: us-east-1
