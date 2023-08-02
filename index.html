@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="generator" content="Asciidoctor 2.0.16">
 <meta name="description" content="Antivirus for Managed File Transfers Deployment Guide on AWS">
 <meta name="keywords" content="Partner Solution, AWS, Antivirus for Managed File Transfers">
 <title>Antivirus for Managed File Transfers on AWS</title>
@@ -858,7 +858,11 @@ p.footer-text a{color:#d7d8d8}
 <li><a href="#_costs_and_licenses">Costs and licenses</a></li>
 <li><a href="#_architecture">Architecture</a></li>
 <li><a href="#_deployment_options">Deployment options</a></li>
-<li><a href="#_predeployment_steps">Predeployment steps</a></li>
+<li><a href="#_predeployment_steps">Predeployment steps</a>
+<ul class="sectlevel2">
+<li><a href="#_subscribe_to_the_marketplace_listing">Subscribe to the Marketplace listing</a></li>
+</ul>
+</li>
 <li><a href="#_deployment_steps">Deployment steps</a></li>
 <li><a href="#_postdeployment_steps">Postdeployment steps</a></li>
 <li><a href="#_troubleshooting">Troubleshooting</a></li>
@@ -880,8 +884,8 @@ p.footer-text a{color:#d7d8d8}
 </div>
 <div class="paragraph text-center">
 <p><strong>July 2023</strong><br>
-<em>David Dreyer, Aaron Gettings, and Sarah Heiermann-Walker  {Cloud Storage Security}</em><br>
-<em>Russ Boyer, AWS Transfer Family team</em><br></p>
+<em>David Dreyer, Aaron Gettings, and Sarah Heiermann-Walker, Cloud Storage Security</em><br>
+<em>Russ Boyer, AWS Transfer Family team, and Dave May, AWS Integration and Automation</em><br></p>
 </div>
 <div class="imageblock text-left image-container">
 <div class="content">
@@ -942,7 +946,7 @@ AWS Cloud.</p>
 </div>
 <div id="architecture1" class="imageblock">
 <div class="content">
-<img src="images/Antivirus-for-Managed-File-Transfers-architecture-diagram.png" alt="Architecture">
+<img src="docs/deployment_guide/images/Antivirus-for-Managed-File-Transfers-architecture-diagram.png" alt="Architecture">
 </div>
 <div class="title">Figure 1. Partner Solution architecture for Antivirus for Managed File Transfers on AWS</div>
 </div>
@@ -1001,19 +1005,27 @@ AWS Cloud.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Deploy Antivirus for Managed File Transfers into an existing VPC from the <a href="TBD">AWS Marketplace</a>.</p>
+<p><a href="https://fwd.aws/dgRdw?">Deploy Antivirus for Managed File Transfers into a new VPC</a></p>
+</li>
+<li>
+<p><a href="https://fwd.aws/mbE7W?">Deploy Antivirus for Managed File Transfers into an existing VPC</a></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>The deployment uses one CloudFormation template that contains configuration parameters that you can customize.</p>
+<p>These deployments use CloudFormations templates that contain configuration parameters that you can customize.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_predeployment_steps">Predeployment steps</h2>
 <div class="sectionbody">
-
+<div class="sect2">
+<h3 id="_subscribe_to_the_marketplace_listing">Subscribe to the Marketplace listing</h3>
+<div class="paragraph">
+<p>Visit <a href="https://aws.amazon.com/marketplace/pp/prodview-q7oc4shdnpc4w?sr=0-1&amp;ref_=beagle&amp;applicationId=AWSMPContessa">Antivirus for Amazon S3 - PAYG with 30 DAY FREE TRIAL</a> on Amazon Marketplace and click "Continue to Subscribe" to begin a Marketplace subscription.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1190,9 +1202,9 @@ Unless you&#8217;re customizing the Partner Solution templates or are instructed
 <footer>
     <p class="footer-text">
         <!-- We can use document attributes: -->
-        <!-- Generated with Asciidoctor v2.0.20. -->
+        <!-- Generated with Asciidoctor v2.0.16. -->
         <a href="https://aws.amazon.com/privacy/">Privacy</a> | <a href="https://aws.amazon.com/terms/">Site terms</a> |
-        &copy; {current-year}, Amazon Web Services, Inc. or its affiliates and Cloud Storage Security. All rights reserved.
+        &copy; 2023, Amazon Web Services, Inc. or its affiliates and Cloud Storage Security. All rights reserved.
     </p>
 </footer>
 </body>

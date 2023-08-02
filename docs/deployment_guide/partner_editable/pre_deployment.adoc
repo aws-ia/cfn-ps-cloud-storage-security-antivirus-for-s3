@@ -1,3 +1,7 @@
 //Include any predeployment steps here, such as signing up for a Marketplace AMI or making any changes to a partner account. If there are no predeployment steps, leave this file empty.
 
 == Predeployment steps
+
+=== Subscribe to the Marketplace listing
+
+Visit https://aws.amazon.com/marketplace/pp/prodview-q7oc4shdnpc4w?sr=0-1&ref_=beagle&applicationId=AWSMPContessa[Antivirus for Amazon S3 - PAYG with 30 DAY FREE TRIAL] on Amazon Marketplace and click "Continue to Subscribe" to begin a Marketplace subscription.
