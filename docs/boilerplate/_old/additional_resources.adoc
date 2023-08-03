@@ -1,0 +1,7 @@
+== AWS Partner Solution reference deployments
+
+To learn about other AWS Partner Solutions, refer to the https://aws.amazon.com/solutions/partners/[AWS Partner Solutions home page^].
+
+== GitHub organization
+
+Navigate to https://aws.amazon.com/quickstart[GitHub^] to download the templates and scripts for AWS Partner Solutions, post comments, and share your customizations with others.

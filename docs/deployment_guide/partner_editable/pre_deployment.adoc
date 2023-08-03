@@ -2,6 +2,20 @@
 
 == Predeployment steps
 
-=== Subscribe to the Marketplace listing
+You must configure the following before deployment:
 
-Visit https://aws.amazon.com/marketplace/pp/prodview-q7oc4shdnpc4w?sr=0-1&ref_=beagle&applicationId=AWSMPContessa[Antivirus for Amazon S3 - PAYG with 30 DAY FREE TRIAL] on Amazon Marketplace and click "Continue to Subscribe" to begin a Marketplace subscription.
+* A VPC with two subnets. Ensure that the subnets allow outbound internet traffic. You must select a VPC and two subnets during deployment.
+* A console security group CIDR block. You must select a CIDR block during deployment.
+* An administrator email account to receive Cloud Storage Security login credentials. You must enter an administrator email address during deployment.
+
+== Subscribe to {partner-product-name}
+. Sign in to your AWS account.
+. Navigate to https://aws.amazon.com/marketplace/pp/prodview-s56hvqbcyj5qe[Antivirus for Managed File Transfers - PAYG with 30 DAY FREE TRIAL^] on AWS Marketplace.
+. Choose *Continue to Subscribe*.
+. Review the pricing information and choose *Accept Terms*.
+. Choose *Continue to Configuration*.
+. On the *Configure this software* page, for *Software version*, choose the most recent version.
+. Choose *Continue to Launch*.
+. On the *Launch this software* page, under *Deployment template*, choose *Click to Launch Antivirus for Managed File Transfers Deployment*.
+. The AWS CloudFormation console opens with a prepopulated template. Continue with the instructions in the next section, link:#_deployment_steps[Deployment steps].
+
