@@ -1,9 +1,4 @@
-This guide covers the information you need to deploy the Antivirus for Managed File Transfers Partner Solution in the AWS Cloud.
-
-// Fill in the info in <angle brackets> for use on the landing page only: 
-This Amazon Web Services (AWS) Partner Solution deploys https://cloudstoragesec.com[Antivirus for Managed File Transfers] in the AWS Cloud so that organizations can scan file exchange workloads for malicious code. This solution is for new and existing AWS Transfer Family users who want to simplify the implementation of malware scanning as well as streamline antivirus and Transfer Family deployments.  It allows users to easily validate data cleanliness and reduce the risk of ingesting and sharing infected files as part of their cloud-based data transfer process. 
-
-For more information about the product, troubleshooting, or additional functionality, refer to the https://help.cloudstoragesec.com[Cloud Storage Security documentation].
+This guide provides instructions for deploying {partner-product-short-name} in the AWS Cloud. If you are unfamiliar with AWS Partner Solutions, refer to the https://fwd.aws/rA69w?[AWS Partner Solution General Information Guide^].
 
 // Deploying this solution does not guarantee an organization’s compliance with any laws, certifications, policies, or other regulations. [Uncomment this statement only for solutions that relate to compliance. We'll add the corresponding reference part to the landing page and get legal approval before publishing.]
 

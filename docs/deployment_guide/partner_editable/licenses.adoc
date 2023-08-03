@@ -1,7 +1,7 @@
 // Include details about any licenses and how to sign up. Provide links as appropriate.
 
-Antivirus for Managed File Transfers is offered on a pay-as-you-go model, with pricing based on the amount of data scanned.
+The Partner Solution requires a subscription to https://aws.amazon.com/marketplace/pp/prodview-s56hvqbcyj5qe[Antivirus for Managed File Transfers - PAYG with 30 DAY FREE TRIAL^] on AWS Marketplace. {partner-product-short-name} is offered on a pay-as-you-go model, with pricing based on the amount of data scanned.
 
-https://cloudstoragesec.com/contact[Contact Cloud Storage Security] to discuss personalized pricing options, including prepaid discounts and private offers.
+Contact https://cloudstoragesec.com/contact[Cloud Storage Security^] to discuss personalized pricing options, including prepaid discounts and private offers.
 
-In addition to CSS costs incurred by scanning data, AWS will bill you for the resources deployed. For more information, refer to the https://fwd.aws/rA69w?[AWS Partner Solution General Information Guide^].
+In addition to Cloud Storage Security costs incurred by scanning data, you will be billed for any AWS resources the solution deploys. For more information, refer to the https://fwd.aws/rA69w?[AWS Partner Solution General Information Guide^].
