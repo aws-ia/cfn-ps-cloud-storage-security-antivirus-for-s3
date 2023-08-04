@@ -1,5 +1,5 @@
-:partner-solution-project-name: quickstart-cloud-storage-security-antivirus-for-amazon-s3
-:partner-solution-github-org: aws-quickstart
+:partner-solution-project-name: cfn-ps-cloud-storage-security-antivirus-for-s3
+:partner-solution-github-org: aws-ia
 :partner-product-name: Antivirus for Managed File Transfers
 :partner-product-short-name: Antivirus for Managed File Transfers
 :partner-company-name: Cloud Storage Security
