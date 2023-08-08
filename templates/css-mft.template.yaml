@@ -7,14 +7,14 @@ Metadata:
           - UserName
           - Email
         Label:
-          default: User Configuration
+          default: User configuration
       - Parameters:
           - VPC
           - SubnetA
           - SubnetB
           - ConsoleSecurityGroupCidrBlock
         Label:
-          default: Network Configuration
+          default: Network configuration
       - Parameters:
           - AgentScanningEngine
           - MultiEngineScanningMode
@@ -23,121 +23,119 @@ Metadata:
           - LargeFileDiskSize
           - BucketsToProtect
         Label:
-          default: CSS Configuration
+          default: Cloud Storage Security configuration
       - Parameters:
           - ExistingTransferFamilyServer
         Label:
-          default: Transfer Family
+          default: AWS Transfer Family
       - Parameters:
           - QSDisableAutoProtect
         Label:
-          default: AWS Quick Start Configuration
+          default: AWS Partner Solution configuration
     ParameterLabels:
       UserName:
-        default: Admin User Name
+        default: Administrator username
       Email:
-        default: Admin User Email Address
+        default: Administrator email address
       VPC:
-        default: Virtual Private Cloud (VPC) ID
+        default: Virtual private cloud (VPC) ID
       SubnetA:
         default: Subnet A ID
       SubnetB:
         default: Subnet B ID
       ConsoleSecurityGroupCidrBlock:
-        default: Console Security Group CIDR Block
+        default: Console security group CIDR block
       AgentScanningEngine:
-        default: Agent Scanning Engine
+        default: Agent scanning engine
       MultiEngineScanningMode:
-        default: Multi-Engine Scanning Mode
+        default: Multi-engine scanning mode
       AgentDiskSize:
-        default: Agent Disk Size
+        default: Agent disk size
       EnableLargeFileScanning:
-        default: Enable Large File Scanning
+        default: Enable large file scanning with Amazon EC2
       LargeFileDiskSize:
-        default: Extra Large File Disk Size
+        default: Extra-large file disk size
       ExistingTransferFamilyServer:
-        default: Existing Transfer Family Server
+        default: Existing Transfer Family server
       BucketsToProtect:
-        default: Buckets to Protect
+        default: Existing S3 buckets to protect
       QSDisableAutoProtect:
-        default: Quick Start Disable Auto-Protect
+        default: Disable auto-protect of S3 bucket
 Parameters:
   UserName:
     Type: String
-    Description: Initial user name for the Console management website
+    Description: Username of the Cloud Storage Security console administrator.
     MinLength: 1
     MaxLength: 128
     Default: admin
   Email:
     Type: String
-    Description: Email address for Console management website account
+    Description: Email address of the Cloud Storage Security console administrator.
     AllowedPattern: ^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$
     ConstraintDescription: Must be a valid email address.
   VPC:
     Type: AWS::EC2::VPC::Id
-    Description: The VPC in which to place the public facing Console
+    Description: VPC to deploy the public-facing Cloud Storage Security console.
     MinLength: 1
     ConstraintDescription: VPC is a mandatory input parameter. Select an existing VPC ID.
   SubnetA:
     Type: AWS::EC2::Subnet::Id
-    Description: A subnet in your VPC in which the public facing Console can be placed. Ensure this subnet allows outbound internet traffic.
+    Description: Choose a subnet that allows outbound internet traffic.
     MinLength: 1
-    ConstraintDescription: SubnetA is a mandatory input parameter. Select existing subnet from the selected VPC.
+    ConstraintDescription: Subnet A is a mandatory input parameter. Choose an existing subnet from the selected VPC.
   SubnetB:
     Type: AWS::EC2::Subnet::Id
-    Description: A subnet in your VPC in which the public facing Console can be placed. Ensure this subnet allows outbound internet traffic. **Subnet B must be different from Subnet A and should be in a different Availability Zones**
+    Description: Choose a second subnet in a different Availability Zone that allows outbound internet traffic.
     MinLength: 1
-    ConstraintDescription: SubnetB is a mandatory input parameter. Select existing subnet from the selected VPC.
+    ConstraintDescription: Subnet B is a mandatory input parameter. Select existing subnet from the selected VPC.
   ConsoleSecurityGroupCidrBlock:
     Type: String
-    Description: The IP address range that can access the Console management website (e.g. X.X.X.X/32 for a single given IP, 0.0.0.0/0 for open access)
+    Description: IP address range with access to the Cloud Storage Security console website. Enter a single IP address in the form "X.X.X.X/32" or enter "0.0.0.0/0" for open access.
     MinLength: 9
     MaxLength: 18
     AllowedPattern: ((\d{1,3})\.){3}\d{1,3}/\d{1,2}
-    ConstraintDescription: Must be valid CIDR notation of the form X.X.X.X/X
+    ConstraintDescription: Must be valid CIDR notation of the form "X.X.X.X/X".
   AgentScanningEngine:
     Type: String
     Default: "Sophos"
     AllowedValues: ["ClamAV", "Sophos"]
-    Description: "Choose the engine that should be used to scan files (See Marketplace listing for pricing differences)"
+    Description: Scanning engine to deploy. Refer to AWS Marketplace for Sophos and Clam AV pricing.
   MultiEngineScanningMode:
     Type: String
     Default: "Disabled"
     AllowedValues: ["Disabled", "All", "LargeFiles"]
-    Description: "Choose if you want to use multiple engines to scan files. All will scan every file with both engines, LargeFiles will scan files larger than 2GB with Sophos. Premium Engine pricing applies."
+    Description: Choose "All" to enable scanning of all files simultaneously with both Sophos and ClamAV. Choose "LargeFiles" to use simultaneous scanning but Sophos only to scan files larger than 2GB. Premium engine pricing applies. Refer to AWS Marketplace for Sophos and Clam AV pricing.
   AgentDiskSize:
     Type: Number
     Default: 20
     MinValue: 20
     MaxValue: 200
-    Description: Choose a larger disk size (up to 200 GB) to enable scanning larger files, up to 5 GB fewer than the total disk size. This only applies when using the Sophos scanning engine.
+    Description: Scanning engine disk size. If using Sophos, choose a larger disk size to enable large-file scanning (20–200 GB, but 5 GB less that the total disk size).
   EnableLargeFileScanning:
     Type: String
     Default: "No"
     AllowedValues: ["Yes", "No"]
-    Description: Pick Yes if you would like to have EC2 instances launched to scan files too large to be scanned by the normal agent
+    Description: If using Sophos, choose "Yes" to enable large-file scanning with Amazon EC2.
   LargeFileDiskSize:
     Type: Number
     Default: 2000
     MinValue: 20
     MaxValue: 16300
-    Description: Choose a larger disk size (between 20 - 16,300 GB) to enable scanning larger files, up to 5 GB fewer than the total disk size. This only applies when using the Sophos scanning engine with EC2 large file scanning enabled.
+    Description: If using Sophos large-file scanning with Amazon EC2, choose a larger disk size (20–16300 GB, but 5 GB less that the total disk size).
   ExistingTransferFamilyServer:
     Type: String
     Default: "No"
     AllowedValues: ["Yes", "No"]
-    Description: If you already have an existing Transfer Family server, and just want to deploy the Cloud Storage Security Console, choose "Yes".
+    Description: Choose "Yes" if you have an existing Transfer Family server and only want to deploy the Cloud Storage Security console. Choose "No" to deploy a Transfer Family server and the Cloud Storage Security console.
   BucketsToProtect:
     Type: String
     Default: ""
-    Description: Enter any pre-existing buckets that you would like to automatically enable event-based protection on. Bucket names must be separated by commas (e.g. bucket1,bucket2,bucket3). Protected buckets can be managed after deployment in the CSS Console.
+    Description: To enable automatic event-based protection for existing S3 buckets, enter bucket names separated by commas (for example, "bucket1,bucket2,bucket3"). Manage protected buckets after deployment in the Cloud Storage Security console.
   QSDisableAutoProtect:
     Type: String
     Default: "No"
     AllowedValues: ["Yes", "No"]
-    Description: "By default, the bucket which is created to store files uploaded to the Transfer Server,
-      is automatically protected by the CSS Console. It is highly recommended you keep the default value,
-      in order to ensure all files uploaded are scanned for malware immediately."
+    Description: By default, the Cloud Storage Security console protects the S3 bucket created to store files uploaded to the Transfer Family server. It is recommended that you keep the default value ("No") to ensure that files in the S3 bucket are scanned immediately for malware. Choose "Yes" to disable automatic protection of the S3 bucket (not recommended).
 Conditions:
   DeployTransferFamily: !Equals [!Ref ExistingTransferFamilyServer, "No"]
   DisableAutoProtect: !Equals [!Ref QSDisableAutoProtect, "Yes"]
@@ -311,13 +309,13 @@ Resources:
 Outputs:
   TransferFamilyDestinationBucket:
     Condition: DeployTransferFamily
-    Description: Name of the bucket created for storing files uploaded to the transfer family server
+    Description: Name of the S3 bucket created for storing files uploaded to the Transfer Family server.
     Value: !Ref TransferFamilyDestinationBucket
     Export:
       Name: !Sub "${AWS::StackName}-TransferFamilyDestinationBucket"
   TransferFamilyServerId:
     Condition: DeployTransferFamily
-    Description: ID of the Transfer Family server.
+    Description: Transfer Family server ID.
     Value: !GetAtt TransferFamilyServer.ServerId
     Export:
       Name: !Sub "${AWS::StackName}-TransferFamilyServer"
@@ -328,19 +326,19 @@ Outputs:
     Export:
       Name: !Sub "${AWS::StackName}-TransferFamilyPublicEndpoint"
   ConsoleWebAddress:
-    Description: Public DNS address of Console Web Interface
+    Description: Public DNS address of Cloud Storage Security console web interface.
     Value: !GetAtt CssConsoleStack.Outputs.ConsoleWebAddress
   UserName:
-    Description: User Name used to log in to console
+    Description: Username to log in to the Cloud Storage Security console.
     Value: !GetAtt CssConsoleStack.Outputs.UserName
   Password:
-    Description: Temporary password used to log in to console
+    Description: Temporary password to log in to the Cloud Storage Security console.
     Value: !GetAtt CssConsoleStack.Outputs.Password
   ProactiveNotificationsTopicArn:
-    Description: ARN for the proactive notifications topic
+    Description: Amazon Resource Name (ARN) of the SNS notifications topic.
     Value: !GetAtt CssConsoleStack.Outputs.ProactiveNotificationsTopicArn
     Export:
       Name: !Sub "${AWS::StackName}-proactive-notifications-sns-topic"
   CSSConsoleStackTemplateURL:
-    Description: CFT used for deploying the CSS Console
+    Description: CloudFormation template used to deploy the the Cloud Storage Security console.
     Value: !Sub "https://css-pub-${AWS::Region}.s3.${AWS::Region}.${AWS::URLSuffix}/templates/ConsoleCloudFormationTemplate.yaml"
