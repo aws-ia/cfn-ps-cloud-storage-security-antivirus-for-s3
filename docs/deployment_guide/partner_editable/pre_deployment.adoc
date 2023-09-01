@@ -10,7 +10,7 @@ You must configure the following before deployment:
 
 == Subscribe to {partner-product-name}
 . Sign in to your AWS account.
-. Navigate to https://aws.amazon.com/marketplace/pp/prodview-s56hvqbcyj5qe[Antivirus for Managed File Transfers - PAYG with 30 DAY FREE TRIAL^] on AWS Marketplace.
+. Navigate to https://aws.amazon.com/marketplace/pp/prodview-q7oc4shdnpc4w?sr=0-1&ref_=beagle&applicationId=AWSMPContessa[Antivirus for Managed File Transfers - PAYG with 30 DAY FREE TRIAL^] on AWS Marketplace.
 . Choose *Continue to Subscribe*.
 . Review the pricing information and choose *Accept Terms*.
 . Choose *Continue to Configuration*.
