@@ -1,8 +1,5 @@
 // Edit this placeholder text as necessary to describe the deployment options.
 
-This Partner Solution provides the following deployment option to provision Antivirus for Managed File Transfers into the VPC of your choosing:
+This Partner Solution provides a single deployment option to provision {partner-product-name} into an existing VPC. The deployment uses a AWS CloudFormation template that contains configuration parameters that you can customize.
 
-* https://fwd.aws/dgRdw?[Deploy Antivirus for Managed File Transfers into a new VPC]
-* https://fwd.aws/mbE7W?[Deploy Antivirus for Managed File Transfers into an existing VPC]
 
-These deployments use CloudFormations templates that contain configuration parameters that you can customize.

@@ -9,16 +9,18 @@ image::../docs/deployment_guide/images/Antivirus-for-Managed-File-Transfers-arch
 
 As shown in <<architecture1>>, this Partner Solution sets up the following:
 
-* An ECS Fargate Cluster that contains:
-** A console service for the web application
-** A highly-scalable event agent to process newly created objects
-** Highly-scalable tasks to execute scheduled and on-demand scanning
-** Highly-scalable API endpoint service for API-driven scans
-* A Transfer Family Server and S3 bucket (optional)
-* An SNS Topic to capture create object events
-* An SQS Event Queue to manage the scan processes
-* A Cognito User Pool to provision and manage users for the web application
-* A DynamoDB database to store data related to the scans and deployment
-* CloudWatch Logs to capture details from all events
+* AWS Fargate to run an Amazon Elastic Cluster Service (Amazon ECS) cluster with the Fargate launch type.
+* An Amazon ECS cluster containing the following tasks:
+** A Cloud Storage Security web application console service.
+** A highly scalable event agent service to process newly created objects.
+** Highly scalable tasks to run scheduled and on-demand scans.
+** A highly scalable API agent endpoint service for API-driven scans.
+* (Optional) AWS Transfer Family for a file transfer service to Amazon Simple Storage Service (Amazon S3).
+* (Optional) An Amazon Simple Storage Service (Amazon S3) bucket for transferred files.
+* Amazon Simple Notification Service to capture and post create-object events to an Amazon Simple Queue Service (Amazon SQS) event queue.
+* An SQS event queue to manage scanning processes.
+* Amazon Cognito for a user pool to provision and manage Cloud Storage Security web application users.
+* Amazon DynamoDB for a database to store scan and deployment data.
+* Amazon CloudWatch to capture and log event details.
 
 // [.small]#* The template that deploys this Partner Solution into an existing VPC skips the components marked by asterisks and prompts you for your existing VPC configuration.#
