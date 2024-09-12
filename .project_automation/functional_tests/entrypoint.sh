@@ -48,10 +48,10 @@ printf '\nFunctional test...\n'
 # set +e
 # overrides=$(aws secretsmanager get-secret-value --secret-id $secret_name --query SecretString --output text --region $secret_region)
 # convert the JSON string to YAML and save it to a file
-# if [ "#?" -eq 0 ]; then
-#   echo "$overrides" > .taskcat_overrides.yml
-# fi
-# set -e
+if [ "$?" -eq 0 ]; then
+  echo "$overrides" > .taskcat_overrides.yml
+fi
+set -e
 ##----------------------------------------------------
 
 # set taskcat general config
